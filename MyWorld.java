@@ -27,25 +27,8 @@ public class MyWorld extends World
         //instructions for the pumpkin bois game
          if (Greenfoot.mouseClicked(this)) {
             
-            Label pumpkinBoisGame = new Label("you are at the pumpkin game", 25);
+            Label pumpkinBoisGame = new Label("you are at the pumpkin game", 35);
             addObject(pumpkinBoisGame, 300, 200);
-            Label pumpkinInstructions = new Label("Use WASD or arrow keys to move around", 25);
-            addObject(pumpkinInstructions, 300, 200);
-            
-            Label threeLives = new Label("You have three lives, if you lose all of them, game over!", 25);
-            addObject(threeLives, 300, 200);
-            Label eatCandy = new Label("Eating candy will increase your score by one", 25);
-            addObject(eatCandy, 300, 200);
-            
-            Label avoidGhost = new Label("Hitting a ghost will decrease your score by one", 25);
-            addObject(avoidGhost, 300, 200);
-            Label increaseSpeed = new Label("If your score is a multiple of 10, the speed will increase by one", 20);
-            addObject(increaseSpeed, 300, 200);
-            
-            Label witchDecrease = new Label("Once you hit 20, a witch will appear from the left and right. If you hit one, your score decreases by 5", 10);
-            addObject(witchDecrease, 200, 100);
-            Label bombAppears = new Label("Every 20 seconds, a bomb will appear. Hitting one will take away one life", 10);
-            addObject(bombAppears, 200, 100);
         }
         
     }
