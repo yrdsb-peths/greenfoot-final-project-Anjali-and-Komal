@@ -1,4 +1,6 @@
 #Greenfoot project file
+class.Instructions1.image=pumpkinbackground.jpg
+class.Instructions2.image=amogusBackground.jpg
 class.TitleScreen.image=GhostWallpaper.png
 dependency1.from=Instructions2
 dependency1.to=Label
@@ -33,10 +35,10 @@ dependency8.type=UsesDependency
 dependency9.from=TitleScreen
 dependency9.to=Instructions1
 dependency9.type=UsesDependency
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+editor.fx.0.height=744
+editor.fx.0.width=1382
+editor.fx.0.x=-8
+editor.fx.0.y=-8
 height=744
 package.numDependencies=11
 package.numTargets=8
