@@ -24,6 +24,11 @@ public class MyWorld extends World
             Label yor = new Label("pumpkin bois game", 25);
             addObject(yor, 300, 200);
         }
+         if (Greenfoot.mouseClicked(this)) {
+            
+            Label ha = new Label("you are at the pumpkin game", 25);
+            addObject(ha, 300, 200);
+        }
         
     }
     //end game when the fries aren't eaten

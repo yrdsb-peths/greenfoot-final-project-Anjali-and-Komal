@@ -21,6 +21,15 @@ public class Instructions1 extends World
         {
             Label yor = new Label("pumpkin bois instructions", 25);
             addObject(yor, 300, 200);
+            Label hah = new Label("CLICK TO START GAME", 25);
+            addObject(hah, 300, 150);
+        }
+    }
+    public void act()
+    {
+        if (Greenfoot.mouseClicked(this)) {
+            
+            Greenfoot.setWorld(new MyWorld());
         }
     }
 }

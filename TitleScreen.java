@@ -27,7 +27,6 @@ public class TitleScreen extends World
         addObject(instruct1, 150, 275);
         Label instruct11 = new Label("instructions for Pumpkin Bois", 25);
         addObject(instruct11, 145, 300);
-        
         //AMOGUS
         Label theme2 = new Label("Amogus", 25);
         addObject(theme2, 450, 250);
@@ -35,9 +34,8 @@ public class TitleScreen extends World
         addObject(instruct2, 450, 275);
         Label instruct22 = new Label("instructions for Amogus", 25);
         addObject(instruct22, 445, 300);
-
+        Label game2 = new Label("CLICK TO START AMOGUS GAME", 25);
         
-        prepare();
     }
     // sends user back to the main world act
     public void act()
@@ -52,15 +50,10 @@ public class TitleScreen extends World
             Instructions2 amogUs = new Instructions2();
             Greenfoot.setWorld(amogUs);
         }
+        if (Greenfoot.mouseClicked(this)) {
+            
+            Greenfoot.setWorld(new MyWorld());
+        }
     }
-    
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
-    private void prepare()
-    {
-
     }
-}
 
