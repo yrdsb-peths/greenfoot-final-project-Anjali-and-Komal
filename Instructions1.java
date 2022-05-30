@@ -19,7 +19,7 @@ public class Instructions1 extends World
         super(600, 400, 1); 
         if(Greenfoot.isKeyDown("space"))
         {
-            Label yor = new Label("pumpkin bois instructions", 25);
+            Label yor = new Label("pumpkin bois instructions", 35);
             addObject(yor, 300, 200);
             Label pumpkinInstructions = new Label("Use WASD or arrow keys to move around", 30);
             addObject(pumpkinInstructions, 300, 200);
