@@ -21,13 +21,14 @@ public class MyWorld extends World
         Greenfoot.setWorld(titlescn);
         if(Greenfoot.isKeyDown("space"))
         {
-            Label yor = new Label("pumpkin bois game", 25);
-            addObject(yor, 300, 200);
+            Label pumpkinBois = new Label("pumpkin bois game", 25);
+            addObject(pumpkinBois, 300, 200);
         }
          if (Greenfoot.mouseClicked(this)) {
             
-            Label ha = new Label("you are at the pumpkin game", 25);
-            addObject(ha, 300, 200);
+            Label pumpkinBoisGame = new Label("you are at the pumpkin game", 25);
+            addObject(pumpkinBoisGame, 300, 200);
+            
         }
         
     }
