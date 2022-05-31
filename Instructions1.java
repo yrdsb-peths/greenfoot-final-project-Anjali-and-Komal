@@ -1,18 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Instructions screen for the amogus game theme
+ * Instructions screen for the pumpkin bois theme
  * 
  * Komal Ali and Anjali Vathanakumaran
  * May/June 2022
  */
 public class Instructions1 extends World
 {
-
-    /**
-     * Constructor for objects of class Instructions1.
-     * These are the instructions for the pumpkin bois world
-     */
     public Instructions1()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -32,12 +27,14 @@ public class Instructions1 extends World
         Label bombAppears = new Label("Every 20 seconds, a bomb will appear. Hitting one will take away one life", 25);
         addObject(bombAppears, 200, 250);
         Label start1 = new Label("CLICK TO START GAME", 25);
-        addObject(start1, 300, 300);
+        addObject(start1, 300, 350);
+        if (Greenfoot.mouseClicked(this)) {
+            Greenfoot.setWorld(new MyWorld());
+        } 
     }
     public void act()
     {
         if (Greenfoot.mouseClicked(this)) {
-            
             Greenfoot.setWorld(new MyWorld());
         }
     }
