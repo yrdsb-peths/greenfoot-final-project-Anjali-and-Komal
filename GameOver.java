@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class GameOver here.
+ * Screen that shows when the game is over therefore when the character has died
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Anjali Vathanakumaran and Komal Ali
+ * May/ June 2022
  */
 public class GameOver extends World
 {

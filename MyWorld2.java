@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * AMOGUS
+ * AMOGUS themed game
  * 
  * Komal Ali and Anjali Vathanakumaran
- * May 30, 2022
+ * May/ June 2022
  */
 public class MyWorld2 extends World
 {

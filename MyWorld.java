@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * PUMPKIN BOIS
+ * Pumpkin bois themed game world
  * 
  * Komal Ali and Anjali Vathanakumaran
- * May 30, 2022
+ * May/ June2022
  */
 public class MyWorld extends World
 {
@@ -15,19 +15,20 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
-        // Create elephant object
         
         TitleScreen titlescn = new TitleScreen();
         Greenfoot.setWorld(titlescn);
         if(Greenfoot.isKeyDown("space"))
         {
-            Label yor = new Label("pumpkin bois game", 25);
-            addObject(yor, 300, 200);
+            Label pumpkinBois = new Label("pumpkin bois game", 25);
+            addObject(pumpkinBois, 300, 200);
         }
+        
+        //instructions for the pumpkin bois game
          if (Greenfoot.mouseClicked(this)) {
             
-            Label ha = new Label("you are at the pumpkin game", 25);
-            addObject(ha, 300, 200);
+            Label pumpkinBoisGame = new Label("you are at the pumpkin game", 35);
+            addObject(pumpkinBoisGame, 300, 200);
         }
         
     }
