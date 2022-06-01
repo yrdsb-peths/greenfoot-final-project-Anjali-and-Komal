@@ -4,4 +4,6 @@ comment0.text=\r\n\ Instructions\ for\ the\ Amogus\ game\ theme\r\n\ \r\n\ Komal
 comment1.params=
 comment1.target=Instructions2()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Instructions2.\r\n\ These\ are\ the\ instructions\ for\ the\ amogus\ theme\ \r\n
-numComments=2
+comment2.params=
+comment2.target=void\ act()
+numComments=3
