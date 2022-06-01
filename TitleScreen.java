@@ -8,16 +8,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class TitleScreen extends World
 {
-
     /**
      * Constructor for objects of class TitleScreen.
      * 
      */
+    GreenfootSound ghostSound = new GreenfootSound("sounds/ghostSound.mp3");
     public TitleScreen()
     {    
-        
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        ghostSound.play();
         Label titleLabel = new Label("Escape the Ghosts", 75);
         addObject(titleLabel, 300, 175);
         Label themeLabel = new Label("Choose your theme", 50);
@@ -37,6 +37,7 @@ public class TitleScreen extends World
         addObject(instruct2, 450, 275);
         Label instruct22 = new Label("Amogus theme", 25);
         addObject(instruct22, 445, 300);
+        
         
     }
     // sends user back to the main world act

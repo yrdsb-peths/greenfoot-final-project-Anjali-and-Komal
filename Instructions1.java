@@ -22,9 +22,9 @@ public class Instructions1 extends World
         addObject(avoidGhost, 300, 175);
         Label increaseSpeed = new Label("If your score is a multiple of 10, the speed will increase by one", 25);
         addObject(increaseSpeed, 300, 200);
-        Label witchDecrease = new Label("Once you hit 20, a witch will appear from the left and right. If you hit one, your score decreases by 5", 25);
+        Label witchDecrease = new Label("Once you hit 20, a witch will appear from the left and right. If you hit one, your score decreases by 5", 20);
         addObject(witchDecrease, 200, 225);
-        Label bombAppears = new Label("Every 20 seconds, a bomb will appear. Hitting one will take away one life", 25);
+        Label bombAppears = new Label("Every 20 seconds, a bomb will appear. Hitting one will take away one life", 20);
         addObject(bombAppears, 200, 250);
         Label start1 = new Label("CLICK TO START GAME", 25);
         addObject(start1, 300, 350);
