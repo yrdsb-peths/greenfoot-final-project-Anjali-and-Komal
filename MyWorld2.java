@@ -15,13 +15,13 @@ public class MyWorld2 extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
-        // Create elephant object
+
         
         TitleScreen titlescn = new TitleScreen();
         Greenfoot.setWorld(titlescn);
         if(Greenfoot.mouseClicked(this)){
-            Label hey = new Label("Welcome to the Amogus themed game", 25);
-            addObject(hey, 300, 200);
+            Label amogusGame = new Label("Welcome to the Amogus themed game", 25);
+            addObject(amogusGame, 300, 200);
         }
         
     }
