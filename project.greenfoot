@@ -1,6 +1,7 @@
 #Greenfoot project file
 class.Bombs.image=bomb.png
 class.Candy.image=stawberry.png
+class.GameOver.image=GameoverWallpaper.jpg
 class.Heart.image=ezgif.com-gif-maker\ (2).png
 class.Instructions1.image=pumpkinbackground.jpg
 class.Instructions2.image=amongusBackground.png
