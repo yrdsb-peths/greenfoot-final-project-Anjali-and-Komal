@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Candy here.
+ * Write a description of class Bombs here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Komal Ali + Anjali Vathanakumaran
+ * @June 2022
  */
 /*public class Bombs extends Actor
 {
@@ -20,8 +20,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
             world.removeObject(this);
         }
     }
-    public void setSpeed(int spd)
+    public void setSpeed(int speed)
     {
-        speed = spd;
+        this.speed = speed;
     }
 */
