@@ -21,8 +21,7 @@ public class TitleScreen extends World
         Label titleLabel = new Label("Escape the Ghosts", 75);
         addObject(titleLabel, 300, 175);
         Label themeLabel = new Label("Choose your theme", 50);
-    
-        
+
         //PUMPKIN BOIS
         Label theme1 = new Label("Pumpkin Bois", 25);
         addObject(theme1, 150, 250);
@@ -37,8 +36,8 @@ public class TitleScreen extends World
         addObject(instruct2, 450, 275);
         Label instruct22 = new Label("Amogus theme", 25);
         addObject(instruct22, 445, 300);
-        
-        
+
+        prepare();
     }
     // sends user back to the main world act
     public void act()
@@ -54,9 +53,16 @@ public class TitleScreen extends World
             Greenfoot.setWorld(amogUs);
         }
         if (Greenfoot.mouseClicked(this)) {
-            
+
             Greenfoot.setWorld(new MyWorld());
         }
     }
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
     }
+}
 

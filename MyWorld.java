@@ -22,17 +22,14 @@ public class MyWorld extends World
         
         TitleScreen titlescn = new TitleScreen();
         Greenfoot.setWorld(titlescn);
-        if(Greenfoot.isKeyDown("space"))
-        {
-            Label pumpkinBois = new Label("pumpkin bois game", 25);
-            addObject(pumpkinBois, 300, 200);
-        }
-        
         //instructions for the pumpkin bois game
          if (Greenfoot.mouseClicked(this)) {
-            
             Label pumpkinBoisGame = new Label("you are at the pumpkin game", 35);
             addObject(pumpkinBoisGame, 300, 200);
+            Pumpkins pumpkin = new Pumpkins();
+            addObject(pumpkin, 300, 350);
+            
+            spawnCandies();
         }
         hearts = new ArrayList<Heart>();
         addHearts();
@@ -44,6 +41,14 @@ public class MyWorld extends World
             hearts.add(heart);
             addObject(heart, 50 + i * 70, 50);
         }
+    }
+    
+    public void spawnCandies()
+    {
+        Candy candy = new Candy();
+        int x = 600;
+        int y = Greenfoot.getRandomNumber(400);
+        addObject(candy, x, y);
     }
     
     

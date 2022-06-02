@@ -19,10 +19,9 @@ public class MyWorld2 extends World
         
         TitleScreen titlescn = new TitleScreen();
         Greenfoot.setWorld(titlescn);
-        if(Greenfoot.isKeyDown("enter"))
-        {
-            Label yor = new Label("amogus game", 25);
-            addObject(yor, 300, 200);
+        if(Greenfoot.mouseClicked(this)){
+            Label hey = new Label("Welcome to the Amogus themed game", 25);
+            addObject(hey, 300, 200);
         }
         
     }
