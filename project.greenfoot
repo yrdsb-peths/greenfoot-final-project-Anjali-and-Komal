@@ -7,6 +7,7 @@ class.TitleScreen.image=GhostWallpaper.png
 dependency1.from=Instructions2
 dependency1.to=Label
 dependency1.type=UsesDependency
+<<<<<<< Updated upstream
 dependency10.from=MyWorld2
 dependency10.to=TitleScreen
 dependency10.type=UsesDependency
@@ -22,6 +23,20 @@ dependency13.type=UsesDependency
 dependency14.from=TitleScreen
 dependency14.to=MyWorld
 dependency14.type=UsesDependency
+=======
+dependency10.from=TitleScreen
+dependency10.to=Label
+dependency10.type=UsesDependency
+dependency11.from=TitleScreen
+dependency11.to=Instructions1
+dependency11.type=UsesDependency
+dependency12.from=TitleScreen
+dependency12.to=Instructions2
+dependency12.type=UsesDependency
+dependency13.from=TitleScreen
+dependency13.to=MyWorld
+dependency13.type=UsesDependency
+>>>>>>> Stashed changes
 dependency2.from=Instructions2
 dependency2.to=MyWorld2
 dependency2.type=UsesDependency
@@ -38,6 +53,7 @@ dependency6.from=MyWorld
 dependency6.to=Label
 dependency6.type=UsesDependency
 dependency7.from=MyWorld
+<<<<<<< Updated upstream
 dependency7.to=Heart
 dependency7.type=UsesDependency
 dependency8.from=MyWorld
@@ -53,6 +69,23 @@ editor.fx.0.y=0
 height=735
 package.numDependencies=14
 package.numTargets=12
+=======
+dependency7.to=TitleScreen
+dependency7.type=UsesDependency
+dependency8.from=MyWorld2
+dependency8.to=Label
+dependency8.type=UsesDependency
+dependency9.from=MyWorld2
+dependency9.to=TitleScreen
+dependency9.type=UsesDependency
+editor.fx.0.height=744
+editor.fx.0.width=1382
+editor.fx.0.x=-8
+editor.fx.0.y=-8
+height=744
+package.numDependencies=13
+package.numTargets=8
+>>>>>>> Stashed changes
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -152,7 +185,11 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< Updated upstream
 width=714
+=======
+width=1382
+>>>>>>> Stashed changes
 world.lastInstantiated=MyWorld
 xPosition=0
 yPosition=0
