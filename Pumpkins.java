@@ -64,8 +64,15 @@ public class Pumpkins extends Actor
         if(isTouching(Candy.class))
         {
             removeTouching(Candy.class);
-            MyWorld world = (MyWorld)getWorld();
+            MyWorld world = (MyWorld) getWorld();
             world.spawnCandies();
+            
         }
+        /*if(isTouching(Bombs.class))
+        {
+            removeTouching(Bombs.class);
+            MyWorld world = (MyWorld)getWorld();
+            //remove a life
+        }*/
     }
 }

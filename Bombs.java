@@ -6,14 +6,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Candy extends Actor
+/*public class Bombs extends Actor
 {
     int speed = 1;
     public void act()
     {
         int x = getX();
         int y = getY();
-        setLocation(x, y+2);
+        setLocation(x-2, y);
         MyWorld world = (MyWorld)getWorld();
         if(getY() >= world.getHeight())
         {
@@ -24,4 +24,4 @@ public class Candy extends Actor
     {
         speed = spd;
     }
-}
+*/
