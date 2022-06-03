@@ -6,7 +6,7 @@ import greenfoot.*;
  * Pumpkin bois themed game world
  * 
  * Komal Ali and Anjali Vathanakumaran
- * May/ June2022
+ * May / June2022
  */
 public class MyWorld extends World
 {
@@ -23,7 +23,8 @@ public class MyWorld extends World
         TitleScreen titlescn = new TitleScreen();
         Greenfoot.setWorld(titlescn);
         //instructions for the pumpkin bois game
-         if (Greenfoot.mouseClicked(this)) {
+         if (Greenfoot.mouseClicked(this)) 
+         {
             Label pumpkinBoisGame = new Label("you are at the pumpkin game", 35);
             addObject(pumpkinBoisGame, 300, 200);
             Pumpkins pumpkin = new Pumpkins();
