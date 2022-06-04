@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @Komal Ali + Anjali Vathanakumaran
  * @June 2022
  */
-/*public class Bombs extends Actor
+public class Bombs extends Actor
 {
     int speed = 1;
     public void act()
@@ -24,4 +24,4 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
     {
         this.speed = speed;
     }
-*/
+}

@@ -12,57 +12,79 @@ public class TitleScreen extends World
      * Constructor for objects of class TitleScreen.
      * 
      */
+    int control;
+    boolean pushed;
     GreenfootSound ghostSound = new GreenfootSound("sounds/ghostSound.mp3");
     public TitleScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        ghostSound.play();
+        //ghostSound.play();
+        control = 1;
+        pushed = true;
         Label titleLabel = new Label("Escape the Ghosts", 75);
         addObject(titleLabel, 300, 175);
-        Label themeLabel = new Label("Choose your theme", 50);
-
-        //PUMPKIN BOIS
-        Label theme1 = new Label("Pumpkin Bois", 25);
-        addObject(theme1, 150, 250);
-        Label instruct1 = new Label("Press 'SPACE' to choose",25);
-        addObject(instruct1, 150, 275);
-        Label instruct11 = new Label("Pumpkin Bois theme", 25);
-        addObject(instruct11, 145, 300);
-        //AMOGUS
-        Label theme2 = new Label("Amogus", 25);
-        addObject(theme2, 450, 250);
-        Label instruct2 = new Label("Press 'ENTER' to choose", 25);
-        addObject(instruct2, 450, 275);
-        Label instruct22 = new Label("Amogus theme", 25);
-        addObject(instruct22, 445, 300);
-
-        prepare();
+        Label labels = new Label("Pumpkin Themed Game \nHow: Pumpkin Bois \nAmogus Themed Game \nHow: Amogus", 30);
+        addObject(labels, 300, 300);
+        labels.setFillColor(Color.MAGENTA);
+        
+        Arrow pointer = new Arrow();
+        addObject(pointer, 110, 260);
+        
+        
     }
     // sends user back to the main world act
     public void act()
     {
-        if(Greenfoot.isKeyDown("space"))
+        String key = Greenfoot.getKey();
+        if(("up".equals(key)))
         {
-            Instructions1 pumpBois = new Instructions1();
-            Greenfoot.setWorld(pumpBois);
+            if(control == 4)
+            {
+                control = 1;
+            }
+            else
+            {
+                control++;
+            }
+            pushed = true;
         }
-        else if (Greenfoot.isKeyDown("enter"))
+        
+        if(("down".equals(key)))
         {
-            Instructions2 amogUs = new Instructions2();
-            Greenfoot.setWorld(amogUs);
+            if(control == 1)
+            {
+                control = 4;
+            }
+            else
+            {
+                control--;
+            }
+            pushed = true;
         }
-        if (Greenfoot.mouseClicked(this)) {
-
-            Greenfoot.setWorld(new MyWorld());
+        
+        if("enter".equals(key))
+        {
+            switch(control)
+            {
+                case 1:
+                    Greenfoot.setWorld(new MyWorld());
+                    break;
+                case 2:
+                    Greenfoot.setWorld(new Instructions2());
+                    break;
+                case 3:
+                    Greenfoot.setWorld(new MyWorld2());
+                    break;
+                case 4: 
+                    Greenfoot.setWorld(new Instructions1());
+                    break;
+            }
         }
+        
+        
+       
     }
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
-    private void prepare()
-    {
-    }
+    
 }
 

@@ -23,15 +23,10 @@ public class MyWorld extends World
         TitleScreen titlescn = new TitleScreen();
         Greenfoot.setWorld(titlescn);
         //instructions for the pumpkin bois game
-         if (Greenfoot.mouseClicked(this)) 
-         {
-            Label pumpkinBoisGame = new Label("you are at the pumpkin game", 35);
-            addObject(pumpkinBoisGame, 300, 200);
             Pumpkins pumpkin = new Pumpkins();
             addObject(pumpkin, 300, 350);
             spawnCandies();
             //spawnBombs();
-        }
         hearts = new ArrayList<Heart>();
         addHearts();
     }

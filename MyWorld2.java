@@ -21,11 +21,8 @@ public class MyWorld2 extends World
         TitleScreen titlescn = new TitleScreen();
         Greenfoot.setWorld(titlescn);
         //We should find a way to only change the color only for this and not the other words
-        if(Greenfoot.mouseClicked(this))
-        {
             Label amogusGame = new Label("Welcome to the Amogus themed game", 25);
             addObject(amogusGame, 300, 200);
-        }
         
     }
     //end game when the fries aren't eaten
