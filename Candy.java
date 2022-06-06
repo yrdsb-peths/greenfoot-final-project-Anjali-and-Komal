@@ -18,7 +18,10 @@ public class Candy extends Actor
         if(getY() >= world.getHeight())
         {
             world.removeObject(this);
+            world.loseLives();
+            world.spawnCandies();
         }
+
     }
     public void setSpeed(int spd)
     {
