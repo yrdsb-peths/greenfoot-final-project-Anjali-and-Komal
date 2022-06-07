@@ -17,8 +17,10 @@ public class GameOver extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        Label gameOverLabel = new Label("Game Over", 100);
+        Label gameOverLabel = new Label("Game Over :(", 100);
+        Label tryAgain = new Label("Try again?", 50);
         addObject(gameOverLabel, 300, 200);
+        addObject(tryAgain, 300, 300);
         gameOverLabel.setFillColor(Color.WHITE);
     }
 }
