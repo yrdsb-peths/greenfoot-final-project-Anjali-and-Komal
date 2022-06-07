@@ -25,6 +25,7 @@ public class TitleScreen extends World
         super(600, 400, 1); 
         for(int i = 0; i < optionImages.length; i++){
             optionImages[i] = new GreenfootImage("images/titlescreen/start" + i + ".png");
+            optionImages[i].scale(getWidth(), getHeight());
         }
         worlds[0] = new MyWorld();
         worlds[1] = new Instructions1();
@@ -34,14 +35,14 @@ public class TitleScreen extends World
 
         control = 1;
         pushed = true;
-        Label titleLabel = new Label("Escape the Ghosts", 75);
-        addObject(titleLabel, 300, 175);
-        titleLabel.setFillColor(Color.CYAN);
-        Label labels = new Label("Pumpkin Themed Game \nHow: Pumpkin Bois \nAmogus Themed Game \nHow: Amogus", 30);
-        addObject(labels, 300, 300);
-        labels.setFillColor(Color.CYAN);
-        Arrow pointer = new Arrow();
-        addObject(pointer, 110, 260);
+        // Label titleLabel = new Label("Escape the Ghosts", 75);
+        // addObject(titleLabel, 300, 175);
+        // titleLabel.setFillColor(Color.CYAN);
+        // Label labels = new Label("Pumpkin Themed Game \nHow: Pumpkin Bois \nAmogus Themed Game \nHow: Amogus", 30);
+        // addObject(labels, 300, 300);
+        // labels.setFillColor(Color.CYAN);
+        // Arrow pointer = new Arrow();
+        // addObject(pointer, 110, 260);
         MiiSound.play();
 
     }
@@ -51,9 +52,11 @@ public class TitleScreen extends World
     {
         String key = Greenfoot.getKey();
         //ghostSound.play();
+        if(key == null) return;
+        
         if((key.equals("up")))
         {
-            if(curOption >= 0){
+            if(curOption > 0){
                 curOption--;
                 setBackground(optionImages[curOption]);
             }
@@ -62,8 +65,8 @@ public class TitleScreen extends World
 
         if((key.equals("down")))
         {
-            if(curOption <= optionImages.length){
-                curOption--;
+            if(curOption < optionImages.length - 1){
+                curOption++;
                 setBackground(optionImages[curOption]);
             }
             pushed = true;
