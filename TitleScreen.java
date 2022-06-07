@@ -29,7 +29,7 @@ public class TitleScreen extends World
         }
         worlds[0] = new PumpkinWorld();
         worlds[1] = new Instructions1();
-        worlds[2] = new MyWorld2();
+        worlds[2] = new AmogusWorld();
         worlds[3] = new Instructions2();
         setBackground(optionImages[curOption]);
 
