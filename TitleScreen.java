@@ -28,7 +28,6 @@ public class TitleScreen extends World
         Label labels = new Label("Pumpkin Themed Game \nHow: Pumpkin Bois \nAmogus Themed Game \nHow: Amogus", 30);
         addObject(labels, 300, 300);
         labels.setFillColor(Color.CYAN);
-        
         Arrow pointer = new Arrow();
         addObject(pointer, 110, 260);
         
@@ -38,6 +37,7 @@ public class TitleScreen extends World
     public void act()
     {
         String key = Greenfoot.getKey();
+        ghostSound.play();
         if(("up".equals(key)))
         {
             if(control == 4)
@@ -48,6 +48,7 @@ public class TitleScreen extends World
             {
                 control++;
             }
+            setBackground("start"+control+".png");
             pushed = true;
         }
         
@@ -61,6 +62,7 @@ public class TitleScreen extends World
             {
                 control--;
             }
+            setBackground("start"+control+".png");
             pushed = true;
         }
         
