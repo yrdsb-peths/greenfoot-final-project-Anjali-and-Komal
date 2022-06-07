@@ -12,6 +12,10 @@ public class TitleScreen extends World
      * Constructor for objects of class TitleScreen.
      * 
      */
+    GreenfootImage[] optionImages = new GreenfootImage[4];
+    World[] worlds = new World[4];
+    int curOption = 0;
+
     int control;
     boolean pushed;
     GreenfootSound MiiSound = new GreenfootSound("sounds/MiiSound.mp3");
@@ -19,6 +23,15 @@ public class TitleScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        for(int i = 0; i < optionImages.length; i++){
+            optionImages[i] = new GreenfootImage("images/titlescreen/start" + i + ".png");
+        }
+        worlds[0] = new MyWorld();
+        worlds[1] = new Instructions1();
+        worlds[2] = new MyWorld2();
+        worlds[3] = new Instructions2();
+        setBackground(optionImages[curOption]);
+
         control = 1;
         pushed = true;
         Label titleLabel = new Label("Escape the Ghosts", 75);
@@ -30,63 +43,36 @@ public class TitleScreen extends World
         Arrow pointer = new Arrow();
         addObject(pointer, 110, 260);
         MiiSound.play();
-        
+
     }
+
     // sends user back to the main world act
     public void act()
     {
         String key = Greenfoot.getKey();
-        ghostSound.play();
-        if(("up".equals(key)))
+        //ghostSound.play();
+        if((key.equals("up")))
         {
-            if(control == 4)
-            {
-                control = 1;
+            if(curOption >= 0){
+                curOption--;
+                setBackground(optionImages[curOption]);
             }
-            else
-            {
-                control++;
-            }
-            setBackground("start"+control+".png");
             pushed = true;
         }
-        
-        if(("down".equals(key)))
-        {
-            if(control == 1)
-            {
-                control = 4;
-            }
-            else
-            {
-                control--;
-            }
-            setBackground("start"+control+".png");
-            pushed = true;
-        }
-        
-        if("enter".equals(key))
-        {
-            switch(control)
-            {
-                case 1:
-                    Greenfoot.setWorld(new MyWorld());
-                    break;
-                case 2:
-                    Greenfoot.setWorld(new Instructions2());
-                    break;
-                case 3:
-                    Greenfoot.setWorld(new MyWorld2());
-                    break;
-                case 4: 
-                    Greenfoot.setWorld(new Instructions1());
-                    break;
-            }
-        }
-        
-        
-       
-    }
-    
-}
 
+        if((key.equals("down")))
+        {
+            if(curOption <= optionImages.length){
+                curOption--;
+                setBackground(optionImages[curOption]);
+            }
+            pushed = true;
+        }
+
+        if(key.equals("enter"))
+        {
+            Greenfoot.setWorld(worlds[curOption]);
+        }
+
+    }
+}

@@ -18,8 +18,8 @@ public class MyWorld2 extends World
         super(600, 400, 1, false); 
 
         
-        TitleScreen titlescn = new TitleScreen();
-        Greenfoot.setWorld(titlescn);
+        //TitleScreen titlescn = new TitleScreen();
+        //Greenfoot.setWorld(titlescn);
         //We should find a way to only change the color only for this and not the other words
             Label amogusGame = new Label("Welcome to the Amogus themed game", 25);
             addObject(amogusGame, 300, 200);

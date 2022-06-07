@@ -21,8 +21,8 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
         
-        TitleScreen titlescn = new TitleScreen();
-        Greenfoot.setWorld(titlescn);
+        ///TitleScreen titlescn = new TitleScreen();
+        //Greenfoot.setWorld(titlescn);
         Pumpkins pumpkin = new Pumpkins();
         addObject(pumpkin, 300, 350);
         spawnCandies();
