@@ -2,11 +2,12 @@
 class.Arrow.image=rocket.png
 class.Bombs.image=bomb.png
 class.Candy.image=stawberry.png
-class.Heart.image=herz.png
+class.GameOver.image=GameoverWallpaper.jpg
+class.Heart.image=ezgif.com-gif-maker\ (1).png
 class.Instructions1.image=pumpkinbackground.jpg
 class.Instructions2.image=amongusBackground.png
-class.Pumpkins.image=ghost.gif
-class.TitleScreen.image=start2.png
+class.Pumpkins.image=PumpkinBoi1.PNG
+class.TitleScreen.image=GhostWallpaper.png
 dependency1.from=Instructions2
 dependency1.to=Label
 dependency1.type=UsesDependency

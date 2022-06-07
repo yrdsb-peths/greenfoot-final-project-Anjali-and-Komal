@@ -14,12 +14,11 @@ public class TitleScreen extends World
      */
     int control;
     boolean pushed;
-    GreenfootSound ghostSound = new GreenfootSound("sounds/ghostSound.mp3");
+    GreenfootSound MiiSound = new GreenfootSound("sounds/MiiSound.mp3");
     public TitleScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        //ghostSound.play();
         control = 1;
         pushed = true;
         Label titleLabel = new Label("Escape the Ghosts", 75);
@@ -30,7 +29,7 @@ public class TitleScreen extends World
         labels.setFillColor(Color.CYAN);
         Arrow pointer = new Arrow();
         addObject(pointer, 110, 260);
-        
+        MiiSound.play();
         
     }
     // sends user back to the main world act
