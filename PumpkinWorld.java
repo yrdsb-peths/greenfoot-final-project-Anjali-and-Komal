@@ -36,11 +36,7 @@ public class PumpkinWorld extends World
         scoreLabel = new Label(score, 75);
         addObject(scoreLabel, 550, 50);
         
-        //When score is -1, go to GameOver screen
-        if(score == -1)
-        {
-            GameOver done = new GameOver();
-        }
+        
     }
     
     public void currentScore(int addition)
@@ -100,5 +96,11 @@ public class PumpkinWorld extends World
     {
         score--;
         scoreLabel.setValue(score);
+        //When score is -1, go to GameOver screen
+        if(score == -1)
+        {
+            GameOver done = new GameOver();
+            Greenfoot.setWorld(done);
+        }
     }
 }
