@@ -28,9 +28,9 @@ public class TitleScreen extends World
             optionImages[i].scale(getWidth(), getHeight());
         }
         worlds[0] = new PumpkinWorld();
-        worlds[1] = new Instructions1();
+        worlds[1] = new  PumpkinInstructions();
         worlds[2] = new AmogusWorld();
-        worlds[3] = new Instructions2();
+        worlds[3] = new AmogusInstructions();
         setBackground(optionImages[curOption]);
 
         control = 1;
