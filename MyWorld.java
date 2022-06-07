@@ -16,6 +16,7 @@ public class MyWorld extends World
     int level = 1;
     private int life = 3;
     private ArrayList<Heart> hearts;
+    
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -34,6 +35,12 @@ public class MyWorld extends World
         
         scoreLabel = new Label(score, 75);
         addObject(scoreLabel, 550, 50);
+        
+        //When score is -1, go to GameOver screen
+        if(score == -1)
+        {
+            GameOver done = new GameOver();
+        }
     }
     
     public void currentScore(int addition)
