@@ -16,7 +16,7 @@ public class PumpkinWorld extends World
     int level = 1;
     private int life = 3;
     private ArrayList<Heart> hearts;
-    //int speed = 1
+    
     public PumpkinWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -71,6 +71,11 @@ public class PumpkinWorld extends World
         int y = 0;
         Candy candy = new Candy();
         addObject(candy, x, y);
+        
+        //everytime the score is a multiple of 10, the level matches the speed
+        /**
+         * candy.setSpeed(level);
+         */
     }
     
     public void spawnGhosts()
@@ -91,6 +96,13 @@ public class PumpkinWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
+        //level increases by one when the score is a multiple of 10
+        /**
+         * if(score % 10 == 0)
+         * {
+         *     level+=1;
+         }
+         */
     }
     public void decreaseScore()
     {
@@ -103,10 +115,4 @@ public class PumpkinWorld extends World
             Greenfoot.setWorld(done);
         }
     }
-    /**
-     * public void increaseSpeed(speed)
-     * {
-     *     
-     }
-     */
 }
