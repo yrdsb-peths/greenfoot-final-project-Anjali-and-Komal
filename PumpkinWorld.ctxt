@@ -1,8 +1,8 @@
 #BlueJ class context
-comment0.target=MyWorld
-comment0.text=\r\n\ Pumpkin\ bois\ themed\ game\ world\r\n\ \r\n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\r\n\ May\ /\ June2022\r\n
+comment0.target=PumpkinWorld
+comment0.text=\n\ Pumpkin\ bois\ themed\ game\ world\n\ \n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\n\ May\ /\ June2022\n
 comment1.params=
-comment1.target=MyWorld()
+comment1.target=PumpkinWorld()
 comment2.params=addition
 comment2.target=void\ currentScore(int)
 comment3.params=
@@ -15,7 +15,7 @@ comment6.params=
 comment6.target=void\ spawnGhosts()
 comment7.params=
 comment7.target=void\ increaseScore()
-comment7.text=public\ void\ spawnBombs()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ Bombs\ bomb\ \=\ new\ Bombs();\r\n\ \ \ \ \ \ \ \ int\ x\ \=\ 600;\r\n\ \ \ \ \ \ \ \ int\ y\ \=\ Greenfoot.getRandomNumber(400);\r\n\ \ \ \ \ \ \ \ addObject(bomb,\ x,\ y);\r\n}
+comment7.text=public\ void\ spawnBombs()\n\ \ \ \ {\n\ \ \ \ \ \ \ \ Bombs\ bomb\ \=\ new\ Bombs();\n\ \ \ \ \ \ \ \ int\ x\ \=\ 600;\n\ \ \ \ \ \ \ \ int\ y\ \=\ Greenfoot.getRandomNumber(400);\n\ \ \ \ \ \ \ \ addObject(bomb,\ x,\ y);\n}
 comment8.params=
 comment8.target=void\ decreaseScore()
 numComments=9

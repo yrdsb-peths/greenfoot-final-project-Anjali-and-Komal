@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=Instructions2
-comment0.text=\r\n\ Instructions\ for\ the\ Amogus\ game\ theme\r\n\ \r\n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\r\n\ May/June\ 2022\r\n
+comment0.text=\n\ Instructions\ for\ the\ Amogus\ game\ theme\n\ \n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\n\ May/June\ 2022\n
 comment1.params=
 comment1.target=Instructions2()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Instructions2.\r\n\ These\ are\ the\ instructions\ for\ the\ amogus\ theme\ \r\n
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Instructions2.\n\ These\ are\ the\ instructions\ for\ the\ amogus\ theme\ \n
 comment2.params=
 comment2.target=void\ act()
 numComments=3

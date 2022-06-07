@@ -8,7 +8,7 @@ import greenfoot.*;
  * Komal Ali and Anjali Vathanakumaran
  * May / June2022
  */
-public class MyWorld extends World
+public class PumpkinWorld extends World
 {
     public int score = 0;
     private SimpleTimer timer;
@@ -17,7 +17,7 @@ public class MyWorld extends World
     private int life = 3;
     private ArrayList<Heart> hearts;
     
-    public MyWorld()
+    public PumpkinWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 

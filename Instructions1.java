@@ -25,7 +25,7 @@ public class Instructions1 extends World
         String key = Greenfoot.getKey();
         if("enter".equals(key))
         {
-            Greenfoot.setWorld(new MyWorld());
+            Greenfoot.setWorld(new PumpkinWorld());
         }
     }
 }

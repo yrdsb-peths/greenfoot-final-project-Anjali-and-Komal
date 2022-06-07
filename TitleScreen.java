@@ -27,7 +27,7 @@ public class TitleScreen extends World
             optionImages[i] = new GreenfootImage("images/titlescreen/start" + i + ".png");
             optionImages[i].scale(getWidth(), getHeight());
         }
-        worlds[0] = new MyWorld();
+        worlds[0] = new PumpkinWorld();
         worlds[1] = new Instructions1();
         worlds[2] = new MyWorld2();
         worlds[3] = new Instructions2();
