@@ -19,5 +19,6 @@ public class GameOver extends World
         super(600, 400, 1); 
         Label gameOverLabel = new Label("Game Over", 100);
         addObject(gameOverLabel, 300, 200);
+        gameOverLabel.setFillColor(Color.WHITE);
     }
 }

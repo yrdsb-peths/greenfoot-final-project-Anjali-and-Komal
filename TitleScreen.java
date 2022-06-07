@@ -43,15 +43,13 @@ public class TitleScreen extends World
         // labels.setFillColor(Color.CYAN);
         // Arrow pointer = new Arrow();
         // addObject(pointer, 110, 260);
-        MiiSound.play();
-
     }
 
     // sends user back to the main world act
     public void act()
     {
+        MiiSound.play();
         String key = Greenfoot.getKey();
-        //ghostSound.play();
         if(key == null) return;
         
         if((key.equals("up")))

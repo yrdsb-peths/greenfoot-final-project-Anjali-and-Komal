@@ -69,6 +69,13 @@ public class Pumpkins extends Actor
             world.increaseScore();
             
         }
+        if(isTouching(Ghost.class))
+        {
+            removeTouching(Ghost.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.spawnGhosts();
+            world.decreaseScore();
+        }
         /*if(isTouching(Bombs.class))
         {
             removeTouching(Bombs.class);
