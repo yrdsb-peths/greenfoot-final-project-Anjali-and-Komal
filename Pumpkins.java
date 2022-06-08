@@ -76,11 +76,11 @@ public class Pumpkins extends Actor
             world.spawnGhosts();
             world.decreaseScore();
         }
-        /*if(isTouching(Bombs.class))
+        if(isTouching(Bombs.class))
         {
             removeTouching(Bombs.class);
             PumpkinWorld world = (PumpkinWorld)getWorld();
-            //remove a life
-        }*/
+            world.loseLives();
+        }
     }
 }

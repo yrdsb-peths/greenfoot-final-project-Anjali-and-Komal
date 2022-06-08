@@ -40,7 +40,7 @@ public class PumpkinWorld extends World
     }
     public void act()
     {
-        if(timer.millisElapsed()> 3000){
+        if(timer.millisElapsed()> 20000){
             spawnBombs();
             timer.mark();
         }

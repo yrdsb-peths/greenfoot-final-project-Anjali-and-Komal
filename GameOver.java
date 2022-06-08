@@ -18,9 +18,19 @@ public class GameOver extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         Label gameOverLabel = new Label("Game Over :(", 100);
-        Label tryAgain = new Label("Try again?", 50);
-        addObject(gameOverLabel, 300, 200);
-        addObject(tryAgain, 300, 300);
+        addObject(gameOverLabel, 300, 150);
         gameOverLabel.setFillColor(Color.WHITE);
+        Label goBack = new Label("Press 'SPACE' to try again", 30);
+        addObject(goBack, 300, 300);
+        goBack.setFillColor(Color.CYAN);
+    }
+    
+    public void act()
+    {
+        if(Greenfoot.isKeyDown("space"))
+        {
+            TitleScreen goback = new TitleScreen();
+            Greenfoot.setWorld(goback);
+        }
     }
 }
