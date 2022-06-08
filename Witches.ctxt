@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Witches
+comment0.text=\r\n\ Spawns\ witch\ after\ score\ of\ 20\r\n\ \r\n\ @Komal\ Ali\ and\ Anjali\ Vathanakumaran\ (your\ name)\ \r\n\ @June\ 2022\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Witches()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Witches\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=3
