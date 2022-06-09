@@ -18,7 +18,41 @@ public class Witches extends Actor
     {
         for(int i = 0; i < flyRight.length; i++)
         {
-            flyRight[i] = new GreenfootImage("images/WitchGifFrames.png/
+            flyRight[i] = new GreenfootImage("images/WitchGifFrames.png/WitchGifFrames" + i + ".png");
+            flyRight[i].mirrorHorizontally();
+            flyRight[i].scale(100, 50);
+            
+        }
+        
+        for(int i = 0; i < flyLeft.length; i++)
+        {
+            flyLeft[i] = new GreenfootImage("images/WitchGifFrames.png/WitchGifFrames" + i + ".png");
+            flyLeft[i].scale(100, 50);
+        }
+        
+        animationTimer.mark();
+        
+        //Inital witch image
+        setImage(flyRight[0]);
+    }
+    int imageIndex = 0;
+    public void animateWitch()
+    {
+        if(animationTimer.millisElapsed() < 100)
+        {
+            return;
+        }
+        animationTimer.mark();
+        
+        if(facing.equals("left"))
+        {
+            setImage(flyLeft[imageIndex]);
+            imageIndex = (imageIndex + 1) % flyLeft.length;
+        }
+        else
+        {
+            setImage(flyLeft[imageIndex]);
+            imageIndex = (imageIndex + 1) % flyLeft.length;
         }
     }
     /**
@@ -27,6 +61,7 @@ public class Witches extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        // Calling the animateWitch method
+        animateWitch();
     }
 }

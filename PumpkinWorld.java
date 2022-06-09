@@ -28,7 +28,7 @@ public class PumpkinWorld extends World
         addObject(pumpkin, 300, 350);
         spawnCandies();
         spawnGhosts();
-
+        
         timer = new SimpleTimer();
         timer.mark();
         hearts = new ArrayList<Heart>();
