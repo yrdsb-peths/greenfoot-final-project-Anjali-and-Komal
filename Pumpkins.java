@@ -12,7 +12,10 @@ public class Pumpkins extends Actor
     
     public Pumpkins()
     {
-        
+        GreenfootImage myImage = getImage();
+        int newHeight = (int) myImage.getHeight() / 8;
+        int newWidth = (int) myImage.getWidth() / 8;
+        myImage.scale(newHeight, newWidth);    
     }
     
     public void act()
