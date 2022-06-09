@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Witches extends Actor
 {
+    int speed = 1;
     GreenfootImage[] flyRight = new GreenfootImage[8];
     GreenfootImage[] flyLeft = new GreenfootImage[8];
     
@@ -63,5 +64,15 @@ public class Witches extends Actor
     {
         // Calling the animateWitch method
         animateWitch();
+        int x = getX();
+        int y = getY();
+        setLocation(x, y+2);
+        PumpkinWorld world = (PumpkinWorld)getWorld();
+        if(getY() >= world.getHeight())
+        {
+            world.removeObject(this);
+            world.spawnWitches();
+            world.loseLives();
+        }
     }
 }

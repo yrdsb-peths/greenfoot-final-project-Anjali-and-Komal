@@ -100,7 +100,20 @@ public class PumpkinWorld extends World
         int y = Greenfoot.getRandomNumber(400);
         addObject(bomb, x, y);
     }
-
+    public void spawnWitches()
+    {
+        Witches witch = new Witches();
+        int x = 600;
+        int y = Greenfoot.getRandomNumber(400);
+        addObject(witch, x, y);        
+    }
+    public void spawnWitchesTwenty()
+    {
+        if(score % 20 == 0)
+        {
+            spawnWitches();
+        }
+    }
     public void increaseScore()
     {
         score++;

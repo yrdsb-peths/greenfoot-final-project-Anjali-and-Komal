@@ -8,6 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Ghost extends Actor
 {
+    GreenfootImage[] frontFace = new GreenfootImage[4];
+    
+    //Direction ghost is facing
+    String ghostFacing = "straight";
+    private SimpleTimer animationTimer = new SimpleTimer();
     /**
      * Act - do whatever the Ghost wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
