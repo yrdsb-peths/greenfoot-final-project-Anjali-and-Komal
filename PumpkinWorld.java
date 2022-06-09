@@ -10,7 +10,7 @@ import greenfoot.*;
  */
 public class PumpkinWorld extends World
 {
-    public int score = 0;
+    private int score = 0;
     private SimpleTimer timer;
     Label scoreLabel;
     int level = 1;
@@ -29,7 +29,6 @@ public class PumpkinWorld extends World
         
         spawnCandies();
         spawnGhosts();
-        spawnWitches();
         
         timer = new SimpleTimer();
         timer.mark();
@@ -49,6 +48,10 @@ public class PumpkinWorld extends World
         }
     }
 
+    public int getScore()
+    {
+        return this.score;
+    }
     public void currentScore(int addition)
     {
         score += addition;
@@ -116,7 +119,7 @@ public class PumpkinWorld extends World
         //level increases by one when the score is a multiple of 10
         if(score % 10 == 0)
         {
-            level+=1;
+            level += 1;
         }
         
         if(score % 20 == 0)

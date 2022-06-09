@@ -61,6 +61,17 @@ public class Pumpkins extends Actor
     
     public void eat()
     {
+        if(isTouching(Witches.class))
+        {
+            removeTouching(Witches.class);
+            PumpkinWorld world = (PumpkinWorld) getWorld();
+            world.spawnWitches();
+            world.decreaseScore();
+            world.decreaseScore();
+            world.decreaseScore();
+            world.decreaseScore();
+            world.decreaseScore();
+        }
         if(isTouching(Candy.class))
         {
             removeTouching(Candy.class);

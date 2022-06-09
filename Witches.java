@@ -1,11 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
 /**
  * Spawns witch after score of 20
  * 
  * @Komal Ali and Anjali Vathanakumaran (your name) 
  * @June 2022 (a version number or a date)
  */
+
 public class Witches extends Actor
 {
     int speed = 1;
@@ -21,13 +21,13 @@ public class Witches extends Actor
         {
             flyRight[i] = new GreenfootImage("images/Witches/Witches" + i + ".gif");
             flyRight[i].mirrorHorizontally();
-            flyRight[i].scale(50, 50);
+            flyRight[i].scale(80, 80);
         }
         
         for(int i = 0; i < flyLeft.length; i++)
         {
             flyLeft[i] = new GreenfootImage("images/Witches/Witches" + i + ".gif");
-            flyLeft[i].scale(100, 50);
+            flyLeft[i].scale(80, 80);
         }
         
         animationTimer.mark();
@@ -54,10 +54,7 @@ public class Witches extends Actor
             imageIndex = (imageIndex + 1) % flyLeft.length;
         }
     }
-    /**
-     * Act - do whatever the Witches wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
     public void act()
     {
         // Calling the animateWitch method
