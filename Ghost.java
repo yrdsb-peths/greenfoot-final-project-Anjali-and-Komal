@@ -2,30 +2,39 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Ghost here.
+ * Ghost decreases life by one
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Komal Ali + Anjali Vathanakumaran (your name) 
+ * @June 2022 (a version number or a date)
  */
 public class Ghost extends Actor
 {
     int speed = 2;
-    GreenfootImage[] faceFront = new GreenfootImage[4];
+    
+    GreenfootImage[] faceRight = new GreenfootImage[4];
+    GreenfootImage[] faceLeft = new GreenfootImage[4];
     
     //Direction witch faces
-    String facing = "front";
+    String facing = "right";
     private SimpleTimer animationTimer = new SimpleTimer();
     
     public Ghost()
     {
-        for(int i = 0; i < faceFront.length; i++)
+        for(int i = 0; i < faceRight.length; i++)
         {
-            faceFront[i] = new GreenfootImage("images/Ghost/Ghost" + i + ".gif");
-            faceFront[i].scale(50, 50);
+            faceRight[i] = new GreenfootImage("images/Ghost/Ghost" + i + ".gif");
+            faceRight[i].mirrorHorizontally();
+            faceRight[i].scale(50, 50);
+        }
+        for(int i = 0; i < faceLeft.length; i++)
+        {
+            faceLeft[i] = new GreenfootImage("images/Ghost/Ghost" + i + ".gif");
+            faceLeft[i].scale(200, 150);
         }
         animationTimer.mark();
         
         //Initial ghost image
-        setImage(faceFront[0]);   
+        setImage(faceRight[0]);   
     }
     int imageIndex = 0;
     public void animateGhost()
@@ -33,12 +42,18 @@ public class Ghost extends Actor
         if(animationTimer.millisElapsed() < 100)
         {
             return;
-        }   
+        }
         animationTimer.mark();
-        if(facing.equals("front"))
+        
+        if(facing.equals("left"))
         {
-            setImage(faceFront[imageIndex]);
-            imageIndex = (imageIndex + 1) % faceFront.length;
+            setImage(faceLeft[imageIndex]);
+            imageIndex = (imageIndex + 1) % faceLeft.length;
+        }
+        else
+        {
+            setImage(faceRight[imageIndex]);
+            imageIndex = (imageIndex + 1) % faceRight.length;
         }
     } 
     /**

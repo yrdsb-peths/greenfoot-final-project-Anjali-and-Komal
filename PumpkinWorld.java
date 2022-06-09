@@ -26,9 +26,11 @@ public class PumpkinWorld extends World
         //Greenfoot.setWorld(titlescn);
         Pumpkins pumpkin = new Pumpkins();
         addObject(pumpkin, 300, 350);
+        
         spawnCandies();
         spawnGhosts();
-        spawnWitches();
+        
+        
         timer = new SimpleTimer();
         timer.mark();
         hearts = new ArrayList<Heart>();
@@ -40,7 +42,8 @@ public class PumpkinWorld extends World
     }
     public void act()
     {
-        if(timer.millisElapsed()> 20000){
+        if(timer.millisElapsed()> 20000)
+        {
             spawnBombs();
             timer.mark();
         }
@@ -80,9 +83,7 @@ public class PumpkinWorld extends World
         addObject(candy, x, y);
 
         //everytime the score is a multiple of 10, the level matches the speed
-        /**
-         * candy.setSpeed(level);
-         */
+        candy.setSpeed(level);
     }
 
     public void spawnGhosts()
@@ -107,7 +108,7 @@ public class PumpkinWorld extends World
             Witches witch = new Witches();
             int x = 600;
             int y = Greenfoot.getRandomNumber(400);
-            addObject(witch, x, y); 
+            addObject(witch, x, y);     
         }
                
     }
@@ -115,13 +116,12 @@ public class PumpkinWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
+        
         //level increases by one when the score is a multiple of 10
-        /**
-         * if(score % 10 == 0)
-         * {
-         *     level+=1;
+        if(score % 10 == 0)
+        {
+            level+=1;
         }
-         */
     }
 
     public void decreaseScore()

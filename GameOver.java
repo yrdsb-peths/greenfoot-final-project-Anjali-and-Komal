@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Screen that shows when the game is over therefore when the character has died
+ * Screen that shows when the game is over (when the character has died)
  * 
  * Anjali Vathanakumaran and Komal Ali
  * May/ June 2022
@@ -19,7 +19,7 @@ public class GameOver extends World
         super(600, 400, 1); 
         Label gameOverLabel = new Label("Game Over :(", 100);
         addObject(gameOverLabel, 300, 150);
-        gameOverLabel.setFillColor(Color.WHITE);
+        gameOverLabel.setFillColor(Color.CYAN);
         Label goBack = new Label("Press 'SPACE' to try again", 30);
         addObject(goBack, 300, 300);
         goBack.setFillColor(Color.CYAN);
