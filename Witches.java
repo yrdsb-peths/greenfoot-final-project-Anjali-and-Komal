@@ -21,18 +21,16 @@ public class Witches extends Actor
         {
             flyRight[i] = new GreenfootImage("images/Witches/Witches" + i + ".gif");
             flyRight[i].mirrorHorizontally();
-            flyRight[i].scale(80, 80);
-            
+            flyRight[i].scale(50, 50);
         }
         
         for(int i = 0; i < flyLeft.length; i++)
         {
             flyLeft[i] = new GreenfootImage("images/Witches/Witches" + i + ".gif");
-            flyLeft[i].scale(200, 150);
+            flyLeft[i].scale(100, 50);
         }
         
         animationTimer.mark();
-        
         //Inital witch image
         setImage(flyRight[0]);
     }
@@ -66,13 +64,11 @@ public class Witches extends Actor
         animateWitch();
         int x = getX();
         int y = getY();
-        setLocation(x, y+2);
+        setLocation(x-2, y);
         PumpkinWorld world = (PumpkinWorld)getWorld();
         if(getY() >= world.getHeight())
         {
             world.removeObject(this);
-            world.spawnWitches();
-            world.loseLives();
         }
     }
 }

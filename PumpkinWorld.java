@@ -103,14 +103,10 @@ public class PumpkinWorld extends World
     }
     public void spawnWitches()
     {
-        if(score % 20 == 0)
-        {
             Witches witch = new Witches();
             int x = 600;
             int y = Greenfoot.getRandomNumber(400);
-            addObject(witch, x, y);     
-        }
-               
+            addObject(witch, x, y); 
     }
     public void increaseScore()
     {
@@ -121,6 +117,11 @@ public class PumpkinWorld extends World
         if(score % 10 == 0)
         {
             level+=1;
+        }
+        
+        if(score % 20 == 0)
+        {
+            spawnWitches();
         }
     }
 
