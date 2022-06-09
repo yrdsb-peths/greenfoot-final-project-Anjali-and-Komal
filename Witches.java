@@ -21,13 +21,13 @@ public class Witches extends Actor
         {
             flyRight[i] = new GreenfootImage("images/Witches/Witches" + i + ".gif");
             flyRight[i].mirrorHorizontally();
-            flyRight[i].scale(50, 50);
+            flyRight[i].scale(80, 80);
         }
         
         for(int i = 0; i < flyLeft.length; i++)
         {
             flyLeft[i] = new GreenfootImage("images/Witches/Witches" + i + ".gif");
-            flyLeft[i].scale(100, 50);
+            flyLeft[i].scale(80, 80);
         }
         
         animationTimer.mark();

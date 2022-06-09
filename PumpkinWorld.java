@@ -116,7 +116,7 @@ public class PumpkinWorld extends World
         //level increases by one when the score is a multiple of 10
         if(score % 10 == 0)
         {
-            level+=1;
+            level += 1;
         }
         
         if(score % 20 == 0)
