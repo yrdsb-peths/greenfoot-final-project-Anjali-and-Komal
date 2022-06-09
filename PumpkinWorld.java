@@ -29,7 +29,7 @@ public class PumpkinWorld extends World
         
         spawnCandies();
         spawnGhosts();
-        
+        spawnWitches();
         
         timer = new SimpleTimer();
         timer.mark();
