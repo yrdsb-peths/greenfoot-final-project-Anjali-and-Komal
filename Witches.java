@@ -19,16 +19,16 @@ public class Witches extends Actor
     {
         for(int i = 0; i < flyRight.length; i++)
         {
-            flyRight[i] = new GreenfootImage("images/WitchGifFrames.png/WitchGifFrames" + i + ".png");
+            flyRight[i] = new GreenfootImage("images/Witches/Witches" + i + ".gif");
             flyRight[i].mirrorHorizontally();
-            flyRight[i].scale(100, 50);
+            flyRight[i].scale(80, 80);
             
         }
         
         for(int i = 0; i < flyLeft.length; i++)
         {
-            flyLeft[i] = new GreenfootImage("images/WitchGifFrames.png/WitchGifFrames" + i + ".png");
-            flyLeft[i].scale(100, 50);
+            flyLeft[i] = new GreenfootImage("images/Witches/Witches" + i + ".gif");
+            flyLeft[i].scale(200, 150);
         }
         
         animationTimer.mark();

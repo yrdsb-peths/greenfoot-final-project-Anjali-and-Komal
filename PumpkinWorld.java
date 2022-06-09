@@ -28,7 +28,7 @@ public class PumpkinWorld extends World
         addObject(pumpkin, 300, 350);
         spawnCandies();
         spawnGhosts();
-        
+        spawnWitches();
         timer = new SimpleTimer();
         timer.mark();
         hearts = new ArrayList<Heart>();
@@ -102,17 +102,14 @@ public class PumpkinWorld extends World
     }
     public void spawnWitches()
     {
-        Witches witch = new Witches();
-        int x = 600;
-        int y = Greenfoot.getRandomNumber(400);
-        addObject(witch, x, y);        
-    }
-    public void spawnWitchesTwenty()
-    {
         if(score % 20 == 0)
         {
-            spawnWitches();
+            Witches witch = new Witches();
+            int x = 600;
+            int y = Greenfoot.getRandomNumber(400);
+            addObject(witch, x, y); 
         }
+               
     }
     public void increaseScore()
     {

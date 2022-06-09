@@ -2,7 +2,12 @@
 comment0.target=Ghost
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Ghost\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
-comment1.target=void\ act()
-comment2.params=spd
-comment2.target=void\ setSpeed(int)
-numComments=3
+comment1.target=Ghost()
+comment2.params=
+comment2.target=void\ animateGhost()
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Ghost\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment4.params=spd
+comment4.target=void\ setSpeed(int)
+numComments=5
