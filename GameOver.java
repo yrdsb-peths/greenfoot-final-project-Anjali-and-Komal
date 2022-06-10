@@ -23,9 +23,9 @@ public class GameOver extends World
         Label goBack = new Label("Press 'SPACE' to try again", 30);
         addObject(goBack, 300, 300);
         goBack.setFillColor(Color.CYAN);
-        PumpkinWorld world = (PumpkinWorld) getWorld();
-        Label finalScore = new Label(world.getScore(), 30);
-        addObject(finalScore, 300, 200);
+        
+        //Label finalScore = new Label(world.getScore(), 30);
+        //addObject(finalScore, 300, 200);
     }
     
     public void act()

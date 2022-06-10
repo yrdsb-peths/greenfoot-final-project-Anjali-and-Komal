@@ -1,4 +1,5 @@
 #Greenfoot project file
+class.Amogus.image=Amogus.png
 class.AmogusInstructions.image=amongusBackground.png
 class.AmogusWorld.image=amogusGame.png
 class.Bombs.image=Bomb1.png
@@ -104,10 +105,10 @@ dependency8.type=UsesDependency
 dependency9.from=TitleScreen
 dependency9.to=AmogusInstructions
 dependency9.type=UsesDependency
-editor.fx.0.height=744
-editor.fx.0.width=1382
-editor.fx.0.x=-8
-editor.fx.0.y=-8
+editor.fx.0.height=735
+editor.fx.0.width=696
+editor.fx.0.x=677
+editor.fx.0.y=0
 height=744
 package.numDependencies=31
 package.numTargets=17
