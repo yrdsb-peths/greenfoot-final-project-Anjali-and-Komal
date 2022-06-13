@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Amogus extends Actor
 {
-    GreenfootImage[] idleRight = new GreenfootImage[1];
+    /**GreenfootImage[] idleRight = new GreenfootImage[1];
     GreenfootImage[] idleLeft = new GreenfootImage[1];
     
     //Direction the amogus character is facing

@@ -17,7 +17,7 @@ public class Pumpkins extends Actor
         int newWidth = (int) myImage.getWidth() / 8;
         myImage.scale(newHeight, newWidth);    
     }
-    
+    GreenfootSound pumpkinEats = new GreenfootSound("EatingCandy.mp3");
     public void act()
     {
         //allowing the user to control the direction of the character using WASD
@@ -81,7 +81,7 @@ public class Pumpkins extends Actor
             PumpkinWorld world = (PumpkinWorld) getWorld();
             world.spawnCandies();
             world.increaseScore();
-            
+            pumpkinEats.play();
         }
         if(isTouching(Ghost.class))
         {
