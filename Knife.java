@@ -8,12 +8,31 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Knife extends Actor
 {
+    int speed = 1;
+    public Knife()
+    {
+        GreenfootImage myImage = getImage();
+        int newHeight = (int) myImage.getHeight() / 5;
+        int newWidth = (int) myImage.getWidth() / 5;
+        myImage.scale(newHeight, newWidth);
+    }
     /**
      * Act - do whatever the Knife wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        // Add your action code here.
+        int x = getX();
+        int y = getY();
+        setLocation(x-2, y);
+        PumpkinWorld world = (PumpkinWorld)getWorld();
+        if(getY() >= world.getHeight())
+        {
+            world.removeObject(this);
+        }
+    }
+    public void setSpeed(int speed)
+    {
+        this.speed = speed;
     }
 }
