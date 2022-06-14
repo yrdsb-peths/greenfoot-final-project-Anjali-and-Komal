@@ -3,4 +3,5 @@ comment0.target=AmogusWorld
 comment0.text=\r\n\ AMOGUS\ themed\ game\r\n\ \r\n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\r\n\ May/\ June\ 2022\r\n
 comment1.params=
 comment1.target=AmogusWorld()
+comment1.text=\r\n\ \ \ \ public\ int\ score\ \=\ 0;\r\n\ \ \ \ private\ SimpleTimer\ timer;\r\n\ \ \ \ Label\ scoreLabel;\r\n\ \ \ \ int\ level\ \=\ 1;\r\n\ \ \ \ private\ ArrayList<Heart>\ hearts;\r\n
 numComments=2
