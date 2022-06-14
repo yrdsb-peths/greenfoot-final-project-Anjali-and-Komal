@@ -2,6 +2,8 @@
 comment0.target=Amogus
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Amogus\ here.\r\n\ Amogus\ character\r\n\ \r\n\ @Komal\ Ali\ +\ Anjali\ Vathanakumaran\ (your\ name)\ \r\n\ @June\ 200\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
-comment1.target=void\ act()
-comment1.text=GreenfootImage[]\ idleRight\ \=\ new\ GreenfootImage[1];\r\n\ \ \ \ GreenfootImage[]\ idleLeft\ \=\ new\ GreenfootImage[1];\r\n\ \ \ \ \r\n\ \ \ \ //Direction\ the\ amogus\ character\ is\ facing\r\n\ \ \ \ String\ faceDirection\ \=\ "left";\r\n\ \ \ \ public\ Amogus()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for(int\ i\ \=\ 0;\ i\ <\ idleRight.length;\ i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ idleRight[i]\ \=\ new\ GreenfootImage("images/Amogus/Amogus"\ +\ i\ +\ ".png");\r\n\ \ \ \ \ \ \ \ \ \ \ \ idleRight[i].mirrorHorizontally();\r\n\ \ \ \ \ \ \ \ \ \ \ \ idleRight[i].scale(100,\ 100);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ for(int\ i\ \=\ 0;\ i\ <\ idleLeft.length;\ i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ idleLeft[i]\ \=\ new\ GreenfootImage("images/Amogus/Amogus"\ +\ i\ +\ ".png");\r\n\ \ \ \ \ \ \ \ \ \ \ \ idleLeft[i].scale(100,\ 100);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ //initial\ amogus\ image\r\n\ \ \ \ \ \ \ \ setImage(idleRight[0]);\r\n\ \ \ \ }\r\n\ \ \ \ int\ imageIndex\ \=\ 0;\r\n\ \ \ \ \r\n\ \ \ \ /**\r\n\ Act\ -\ do\ whatever\ the\ Amogus\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment1.target=Amogus()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Amogus\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=3

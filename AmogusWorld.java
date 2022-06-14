@@ -8,10 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class AmogusWorld extends World
 {
+    /**
     public int score = 0;
+    private SimpleTimer timer;
     Label scoreLabel;
     int level = 1;
-    private int lives = 3;
+    private ArrayList<Heart> hearts;
+    */
     public AmogusWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -22,12 +25,122 @@ public class AmogusWorld extends World
         //Greenfoot.setWorld(titlescn);
         Label amogusGame = new Label("Welcome to the Amogus themed game", 25);
         addObject(amogusGame, 300, 200);
+        /**
+         * spawnCandies();
+         * spawnGhosts();
+         * timer = new SimpleTimer();
+        timer.mark();
+        hearts = new ArrayList<Heart>();
+        addLife();
+
+        scoreLabel = new Label(score, 75);
+        addObject(scoreLabel, 550, 50);
+         */
         
     }
-    //end game when the fries aren't eaten
-    
-    
-    
+    /**
+     * public void act()
+    {
+        if(timer.millisElapsed()> 20000)
+        {
+            spawnBombs();
+            timer.mark();
+        }
+    }
+
+    public int getScore()
+    {
+        return this.score;
+    }
+    public void currentScore(int addition)
+    {
+        score += addition;
+        scoreLabel.setValue(score);
+    }
+
+    public void addLife() {
+        for (int i = 0; i < life; i++) {
+            Heart heart = new Heart();
+            hearts.add(heart);
+            addObject(heart, 50 + i * 70, 50);
+        }
+    }
+
+    public void loseLives()
+    {
+        life--;
+        if(life <=0)
+        {
+            Greenfoot.setWorld(new GameOver());
+        }
+        removeObjects(hearts);
+        hearts.clear();
+        addLife();
+    }
+
+    public void spawnCandies()
+    {
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        Candy candy = new Candy();
+        addObject(candy, x, y);
+
+        //everytime the score is a multiple of 10, the level matches the speed
+        candy.setSpeed(level);
+    }
+
+    public void spawnGhosts()
+    {
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        Ghost ghost = new Ghost();
+        addObject(ghost, x, y);
+    }
+
+    public void spawnKnife()
+    {
+       Knife knife = new Knife();
+        int x = 600;
+        int y = Greenfoot.getRandomNumber(400);
+        addObject(knife, x, y);
+    }
+    public void spawnImposter()
+    {
+            Imposter imposter = new Imposter();
+            int x = 600;
+            int y = Greenfoot.getRandomNumber(400);
+            addObject(imposter, x, y); 
+    }
+    public void increaseScore()
+    {
+        score++;
+        scoreLabel.setValue(score);
+        
+        //level increases by one when the score is a multiple of 10
+        if(score % 10 == 0)
+        {
+            level += 1;
+        }
+        
+        if(score % 20 == 0)
+        {
+            spawnWitches();
+        }
+    }
+
+    public void decreaseScore()
+    {
+        score--;
+        scoreLabel.setValue(score);
+        //When score is -1, go to GameOver screen
+        if(score == -1)
+        {
+            GameOver done = new GameOver();
+            Greenfoot.setWorld(done);
+        }
+    }
+     */
+    //end game when the candies aren't eaten
 
     
 }

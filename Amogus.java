@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Amogus extends Actor
 {
-    /**GreenfootImage[] idleRight = new GreenfootImage[1];
+    GreenfootImage[] idleRight = new GreenfootImage[1];
     GreenfootImage[] idleLeft = new GreenfootImage[1];
     
     //Direction the amogus character is facing
@@ -18,13 +18,13 @@ public class Amogus extends Actor
     {
         for(int i = 0; i < idleRight.length; i++)
         {
-            idleRight[i] = new GreenfootImage("images/Amogus/Amogus" + i + ".png");
+            idleRight[i] = new GreenfootImage("images/Amogus/Amogus.png");
             idleRight[i].mirrorHorizontally();
             idleRight[i].scale(100, 100);
         }
         for(int i = 0; i < idleLeft.length; i++)
         {
-            idleLeft[i] = new GreenfootImage("images/Amogus/Amogus" + i + ".png");
+            idleLeft[i] = new GreenfootImage("images/Amogus/Amogus.png");
             idleLeft[i].scale(100, 100);
         }
         
