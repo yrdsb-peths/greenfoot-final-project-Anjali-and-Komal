@@ -74,6 +74,7 @@ public class Pumpkins extends Actor
             world.decreaseScore();
             world.decreaseScore();
             world.decreaseScore();
+            world.loseLives();
         }
         if(isTouching(Candy.class))
         {

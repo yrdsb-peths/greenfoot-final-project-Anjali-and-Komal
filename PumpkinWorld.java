@@ -71,7 +71,7 @@ public class PumpkinWorld extends World
         life--;
         if(life <=0)
         {
-            Greenfoot.setWorld(new GameOver());
+            Greenfoot.setWorld(new GameOver(Scoreboard.getScore()));
         }
         removeObjects(hearts);
         hearts.clear();
@@ -133,7 +133,7 @@ public class PumpkinWorld extends World
         //When score is -1, go to GameOver screen
         if(score == -1)
         {
-            GameOver done = new GameOver();
+            GameOver done = new GameOver(Scoreboard.getScore());
             Greenfoot.setWorld(done);
         }
     }
