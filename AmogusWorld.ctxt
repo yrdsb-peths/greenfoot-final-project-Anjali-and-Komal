@@ -1,7 +1,28 @@
 #BlueJ class context
 comment0.target=AmogusWorld
-comment0.text=\r\n\ AMOGUS\ themed\ game\r\n\ \r\n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\r\n\ May/\ June\ 2022\r\n
+comment0.text=\r\n\ Pumpkin\ bois\ themed\ game\ world\r\n\ \r\n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\r\n\ May\ /\ June2022\r\n
 comment1.params=
 comment1.target=AmogusWorld()
-comment1.text=\r\n\ \ \ \ public\ int\ score\ \=\ 0;\r\n\ \ \ \ private\ SimpleTimer\ timer;\r\n\ \ \ \ Label\ scoreLabel;\r\n\ \ \ \ int\ level\ \=\ 1;\r\n\ \ \ \ private\ ArrayList<Heart>\ hearts;\r\n
-numComments=2
+comment10.params=
+comment10.target=void\ spawnImposters()
+comment11.params=
+comment11.target=void\ increaseScore()
+comment12.params=
+comment12.target=void\ decreaseScore()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=int\ getScore()
+comment4.params=addition
+comment4.target=void\ currentScore(int)
+comment5.params=
+comment5.target=void\ addLife()
+comment6.params=
+comment6.target=void\ loseLives()
+comment7.params=
+comment7.target=void\ spawnCandies()
+comment8.params=
+comment8.target=void\ spawnGhosts()
+comment9.params=
+comment9.target=void\ spawnKnives()
+numComments=13

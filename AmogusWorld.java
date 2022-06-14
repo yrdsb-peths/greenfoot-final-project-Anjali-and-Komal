@@ -1,49 +1,49 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.ArrayList;
+import greenfoot.*;
+// (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * AMOGUS themed game
+ * Pumpkin bois themed game world
  * 
  * Komal Ali and Anjali Vathanakumaran
- * May/ June 2022
+ * May / June2022
  */
 public class AmogusWorld extends World
 {
-    /**
-    public int score = 0;
+    private int score = 0;
     private SimpleTimer timer;
     Label scoreLabel;
     int level = 1;
+    private int life = 3;
     private ArrayList<Heart> hearts;
-    */
+
     public AmogusWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
 
-        Amogus amogus = new Amogus();
         //TitleScreen titlescn = new TitleScreen();
         //Greenfoot.setWorld(titlescn);
-        Label amogusGame = new Label("Welcome to the Amogus themed game", 25);
-        addObject(amogusGame, 300, 200);
-        /**
-         * spawnCandies();
-         * spawnGhosts();
-         * timer = new SimpleTimer();
+        Amogus amogus = new Amogus();
+        addObject(amogus, 300, 350);
+        
+        spawnCandies();
+        spawnGhosts();
+        
+        timer = new SimpleTimer();
         timer.mark();
         hearts = new ArrayList<Heart>();
         addLife();
 
         scoreLabel = new Label(score, 75);
         addObject(scoreLabel, 550, 50);
-         */
-        
+
     }
-    /**
-     * public void act()
+    public void act()
     {
         if(timer.millisElapsed()> 20000)
         {
-            spawnBombs();
+            spawnKnives();
             timer.mark();
         }
     }
@@ -84,8 +84,6 @@ public class AmogusWorld extends World
         int y = 0;
         Candy candy = new Candy();
         addObject(candy, x, y);
-
-        //everytime the score is a multiple of 10, the level matches the speed
         candy.setSpeed(level);
     }
 
@@ -95,36 +93,36 @@ public class AmogusWorld extends World
         int y = 0;
         Ghost ghost = new Ghost();
         addObject(ghost, x, y);
+        ghost.setSpeed(level);
     }
 
-    public void spawnKnife()
+    public void spawnKnives()
     {
-       Knife knife = new Knife();
+        Knife knife = new Knife();
         int x = 600;
         int y = Greenfoot.getRandomNumber(400);
         addObject(knife, x, y);
     }
-    public void spawnImposter()
+    public void spawnImposters()
     {
-            Imposter imposter = new Imposter();
-            int x = 600;
-            int y = Greenfoot.getRandomNumber(400);
-            addObject(imposter, x, y); 
+        Imposter imposter = new Imposter();
+        int x = 600;
+        int y = Greenfoot.getRandomNumber(400);
+        addObject(imposter, x, y); 
     }
     public void increaseScore()
     {
         score++;
         scoreLabel.setValue(score);
-        
-        //level increases by one when the score is a multiple of 10
-        if(score % 10 == 0)
+        //level increases by one when the score is a multiple of 5
+        if(score % 5 == 0)
         {
-            level += 1;
+            level+=2;
         }
         
-        if(score % 20 == 0)
+        if(score % 10== 0)
         {
-            spawnWitches();
+            spawnImposters();
         }
     }
 
@@ -139,8 +137,4 @@ public class AmogusWorld extends World
             Greenfoot.setWorld(done);
         }
     }
-     */
-    //end game when the candies aren't eaten
-
-    
 }

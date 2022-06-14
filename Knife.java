@@ -25,10 +25,10 @@ public class Knife extends Actor
         int x = getX();
         int y = getY();
         setLocation(x-2, y);
-        PumpkinWorld world = (PumpkinWorld)getWorld();
-        if(getY() >= world.getHeight())
+        AmogusWorld world2 = (AmogusWorld)getWorld();
+        if(getY() >= world2.getHeight())
         {
-            world.removeObject(this);
+            world2.removeObject(this);
         }
     }
     public void setSpeed(int speed)
