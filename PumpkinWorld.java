@@ -114,7 +114,7 @@ public class PumpkinWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
-        //level increases by one when the score is a multiple of 10
+        //level increases by one when the score is a multiple of 5
         if(score % 5 == 0)
         {
             level++;
