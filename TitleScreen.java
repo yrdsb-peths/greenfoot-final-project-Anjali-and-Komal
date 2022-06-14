@@ -35,14 +35,6 @@ public class TitleScreen extends World
 
         control = 1;
         pushed = true;
-        // Label titleLabel = new Label("Escape the Ghosts", 75);
-        // addObject(titleLabel, 300, 175);
-        // titleLabel.setFillColor(Color.CYAN);
-        // Label labels = new Label("Pumpkin Themed Game \nHow: Pumpkin Bois \nAmogus Themed Game \nHow: Amogus", 30);
-        // addObject(labels, 300, 300);
-        // labels.setFillColor(Color.CYAN);
-        // Arrow pointer = new Arrow();
-        // addObject(pointer, 110, 260);
     }
 
     // sends user back to the main world act

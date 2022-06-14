@@ -84,8 +84,6 @@ public class PumpkinWorld extends World
         int y = 0;
         Candy candy = new Candy();
         addObject(candy, x, y);
-
-        //everytime the score is a multiple of 10, the level matches the speed
         candy.setSpeed(level);
     }
 
@@ -95,6 +93,7 @@ public class PumpkinWorld extends World
         int y = 0;
         Ghost ghost = new Ghost();
         addObject(ghost, x, y);
+        ghost.setSpeed(level);
     }
 
     public void spawnBombs()
@@ -106,23 +105,22 @@ public class PumpkinWorld extends World
     }
     public void spawnWitches()
     {
-            Witches witch = new Witches();
-            int x = 600;
-            int y = Greenfoot.getRandomNumber(400);
-            addObject(witch, x, y); 
+        Witches witch = new Witches();
+        int x = 600;
+        int y = Greenfoot.getRandomNumber(400);
+        addObject(witch, x, y); 
     }
     public void increaseScore()
     {
         score++;
         scoreLabel.setValue(score);
-        
         //level increases by one when the score is a multiple of 10
-        if(score % 10 == 0)
+        if(score % 5 == 0)
         {
-            level += 1;
+            level++;
         }
         
-        if(score % 20 == 0)
+        if(score % 10== 0)
         {
             spawnWitches();
         }
