@@ -114,10 +114,18 @@ public class AmogusWorld extends World
     {
         score++;
         scoreLabel.setValue(score);
+<<<<<<< Updated upstream
         //level increases by one when the score is a multiple of 5
         if(score % 5 == 0)
         {
             level+=2;
+=======
+        
+        //level increases by two when the score is a multiple of 5
+        if(score % 5 == 0)
+        {
+            level += 2;
+>>>>>>> Stashed changes
         }
         
         if(score % 10== 0)

@@ -2,9 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Knife here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Knife appears after every 20 seconds
+ * @Komal Ali + Anjali Vathanakumaran (your name) 
+ * @June 2022 (a version number or a date)
  */
 public class Knife extends Actor
 {

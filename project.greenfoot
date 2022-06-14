@@ -57,6 +57,7 @@ dependency21.from=PumpkinWorld
 dependency21.to=Label
 dependency21.type=UsesDependency
 dependency22.from=PumpkinWorld
+<<<<<<< Updated upstream
 dependency22.to=Heart
 dependency22.type=UsesDependency
 dependency23.from=PumpkinWorld
@@ -79,10 +80,35 @@ dependency28.to=Witches
 dependency28.type=UsesDependency
 dependency29.from=PumpkinWorld
 dependency29.to=Scoreboard
+=======
+dependency22.to=Scoreboard
+dependency22.type=UsesDependency
+dependency23.from=Bombs
+dependency23.to=PumpkinWorld
+dependency23.type=UsesDependency
+dependency24.from=Witches
+dependency24.to=SimpleTimer
+dependency24.type=UsesDependency
+dependency25.from=Witches
+dependency25.to=PumpkinWorld
+dependency25.type=UsesDependency
+dependency26.from=Knife
+dependency26.to=PumpkinWorld
+dependency26.type=UsesDependency
+dependency27.from=Scoreboard
+dependency27.to=Label
+dependency27.type=UsesDependency
+dependency28.from=Ghost
+dependency28.to=SimpleTimer
+dependency28.type=UsesDependency
+dependency29.from=Ghost
+dependency29.to=PumpkinWorld
+>>>>>>> Stashed changes
 dependency29.type=UsesDependency
 dependency3.from=AmogusWorld
 dependency3.to=Heart
 dependency3.type=UsesDependency
+<<<<<<< Updated upstream
 dependency30.from=Bombs
 dependency30.to=PumpkinWorld
 dependency30.type=UsesDependency
@@ -115,6 +141,34 @@ dependency39.to=Witches
 dependency39.type=UsesDependency
 dependency4.from=AmogusWorld
 dependency4.to=Amogus
+=======
+dependency30.from=Candy
+dependency30.to=PumpkinWorld
+dependency30.type=UsesDependency
+dependency31.from=Pumpkins
+dependency31.to=PumpkinWorld
+dependency31.type=UsesDependency
+dependency32.from=Pumpkins
+dependency32.to=Witches
+dependency32.type=UsesDependency
+dependency33.from=Pumpkins
+dependency33.to=Candy
+dependency33.type=UsesDependency
+dependency34.from=Pumpkins
+dependency34.to=Ghost
+dependency34.type=UsesDependency
+dependency35.from=Pumpkins
+dependency35.to=Bombs
+dependency35.type=UsesDependency
+dependency36.from=Imposter
+dependency36.to=SimpleTimer
+dependency36.type=UsesDependency
+dependency37.from=Imposter
+dependency37.to=PumpkinWorld
+dependency37.type=UsesDependency
+dependency4.from=GameOver
+dependency4.to=TitleScreen
+>>>>>>> Stashed changes
 dependency4.type=UsesDependency
 dependency40.from=Pumpkins
 dependency40.to=Candy
@@ -151,7 +205,11 @@ editor.fx.0.width=1382
 editor.fx.0.x=-8
 editor.fx.0.y=-8
 height=744
+<<<<<<< Updated upstream
 package.numDependencies=44
+=======
+package.numDependencies=37
+>>>>>>> Stashed changes
 package.numTargets=20
 project.charset=UTF-8
 publish.hasSource=false
