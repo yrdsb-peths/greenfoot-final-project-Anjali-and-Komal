@@ -65,6 +65,7 @@ public class TitleScreen extends World
         if(key.equals("enter"))
         {
             Greenfoot.setWorld(worlds[curOption]);
+            MiiSound.stop();
         }
 
     }
