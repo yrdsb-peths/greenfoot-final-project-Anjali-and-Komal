@@ -14,8 +14,7 @@ public class Candy extends Actor
         int x = getX();
         int y = getY();
         setLocation(x, y+2);
-        PumpkinWorld world = (PumpkinWorld)getWorld();
-        AmogusWorld world2 = (AmogusWorld)getWorld();
+        GameWorld world = new GameWorld();
         if(getY() >= world.getHeight())
         {
             world.removeObject(this);

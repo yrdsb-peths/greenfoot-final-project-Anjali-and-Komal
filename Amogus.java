@@ -13,7 +13,7 @@ public class Amogus extends Actor
     GreenfootImage[] idleLeft = new GreenfootImage[1];
     
     //Direction the amogus character is facing
-    String faceDirection = "left";
+    private String facing = "left";
     public Amogus()
     {
         for(int i = 0; i < idleRight.length; i++)
@@ -39,6 +39,81 @@ public class Amogus extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        if(Greenfoot.isKeyDown("a"))
+        {
+            move(-3);
+            facing = "left";
+        }
+        if(Greenfoot.isKeyDown("d"))
+        {
+            move(3);
+            facing = "right";
+        }
+        if(Greenfoot.isKeyDown("w"))
+        {
+            setLocation(getX(), getY() - 3);
+        }
+        if(Greenfoot.isKeyDown("s"))
+        {
+            setLocation(getX(), getY() + 3);
+        }
+        //Arrow keys
+        if(Greenfoot.isKeyDown("left"))
+        {
+            move(-3);
+            facing = "left";
+        }
+        if(Greenfoot.isKeyDown("right"))
+        {
+            move(3);
+            facing= "right";
+        }
+        if(Greenfoot.isKeyDown("up"))
+        {
+            setLocation(getX(), getY() - 3);
+        }
+        if(Greenfoot.isKeyDown("down"))
+        {
+            setLocation(getX(), getY() + 3);
+        }
+        eat();
     }
+    
+    private void eat()
+    {
+        if(isTouching(Imposter.class))
+        {
+            removeTouching(Imposter.class);
+            AmogusWorld world1 = (AmogusWorld) getWorld();
+            world1.spawnImposters();
+            world1.decreaseScore();
+            world1.decreaseScore();
+            world1.decreaseScore();
+            world1.decreaseScore();
+            world1.decreaseScore();
+            world1.loseLives();
+        }
+        if(isTouching(Candy.class))
+        {
+            removeTouching(Candy.class);
+            AmogusWorld world1 = (AmogusWorld) getWorld();
+            world1.spawnCandies();
+            world1.increaseScore();
+        }
+        if(isTouching(Ghost.class))
+        {
+            removeTouching(Ghost.class);
+            AmogusWorld world1 = (AmogusWorld) getWorld();
+            world1.spawnGhosts();
+            world1.decreaseScore();
+        }
+        if(isTouching(Knife.class))
+        {
+            removeTouching(Knife.class);
+            AmogusWorld world1 = (AmogusWorld) getWorld();
+            world1.loseLives();
+        }
+    }
+    
+    
 }

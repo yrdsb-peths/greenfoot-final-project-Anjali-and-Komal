@@ -8,35 +8,17 @@ import greenfoot.*;
  * Komal Ali and Anjali Vathanakumaran
  * May / June2022
  */
-public class PumpkinWorld extends World
+public class PumpkinWorld extends GameWorld
 {
-    private int score = 0;
-    private SimpleTimer timer;
-    Label scoreLabel;
-    int level = 1;
-    private int life = 3;
-    private ArrayList<Heart> hearts;
-
     public PumpkinWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1, false); 
-
-        //TitleScreen titlescn = new TitleScreen();
-        //Greenfoot.setWorld(titlescn);
         Pumpkins pumpkin = new Pumpkins();
         addObject(pumpkin, 300, 350);
         
         spawnCandies();
         spawnGhosts();
         
-        timer = new SimpleTimer();
-        timer.mark();
-        hearts = new ArrayList<Heart>();
-        addLife();
-
-        scoreLabel = new Label(score, 75);
-        addObject(scoreLabel, 550, 50);
+        
 
     }
     public void act()
@@ -48,10 +30,7 @@ public class PumpkinWorld extends World
         }
     }
 
-    public int getScore()
-    {
-        return this.score;
-    }
+    
     public void currentScore(int addition)
     {
         score += addition;
@@ -126,15 +105,5 @@ public class PumpkinWorld extends World
         }
     }
 
-    public void decreaseScore()
-    {
-        score--;
-        scoreLabel.setValue(score);
-        //When score is -1, go to GameOver screen
-        if(score == -1)
-        {
-            GameOver done = new GameOver();
-            Greenfoot.setWorld(done);
-        }
-    }
+    
 }

@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Pumpkins extends Actor
 {
-    String facing = "right";
+    private String facing = "right";
     
     public Pumpkins()
     {
