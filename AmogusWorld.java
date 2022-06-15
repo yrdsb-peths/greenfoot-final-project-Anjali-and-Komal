@@ -19,6 +19,7 @@ public class AmogusWorld extends GameWorld
         spawnGhosts();
 
     }
+    
     public void act()
     {
         if(timer.millisElapsed()> 20000)
@@ -35,6 +36,7 @@ public class AmogusWorld extends GameWorld
         int y = Greenfoot.getRandomNumber(400);
         addObject(knife, x, y);
     }
+    
     public void spawnImposters()
     {
         Imposter imposter = new Imposter();
@@ -42,17 +44,11 @@ public class AmogusWorld extends GameWorld
         int y = Greenfoot.getRandomNumber(400);
         addObject(imposter, x, y); 
     }
-    public void increaseScore()
+    
+    //when the score is a multiple of 10, summon imposters
+    public void summonImposters()
     {
-        score++;
-        scoreLabel.setValue(score);
-        //level increases by one when the score is a multiple of 5
-        if(score % 5 == 0)
-        {
-            level+=2;
-        }
-        
-        if(score % 10== 0)
+        if(score % 10 == 0)
         {
             spawnImposters();
         }

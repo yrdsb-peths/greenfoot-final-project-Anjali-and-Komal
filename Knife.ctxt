@@ -1,11 +1,11 @@
 #BlueJ class context
 comment0.target=Knife
-comment0.text=\n\ Write\ a\ description\ of\ class\ Knife\ here.\n\ Knife\ appears\ after\ every\ 20\ seconds\n\ @Komal\ Ali\ +\ Anjali\ Vathanakumaran\ (your\ name)\ \n\ @June\ 2022\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Knife\ here.\r\n\ Knife\ appears\ after\ every\ 20\ seconds\r\n\ @Komal\ Ali\ +\ Anjali\ Vathanakumaran\ (your\ name)\ \r\n\ @June\ 2022\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Knife()
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\n\ Act\ -\ do\ whatever\ the\ Knife\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Knife\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment3.params=speed
 comment3.target=void\ setSpeed(int)
 numComments=4

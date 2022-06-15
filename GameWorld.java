@@ -91,7 +91,16 @@ public class GameWorld extends World
             Greenfoot.setWorld(done);
         }
     }
-    
+    public void increaseScore()
+    {
+        score++;
+        scoreLabel.setValue(score);
+        //level increases by one when the score is a multiple of 5
+        if(score % 5 == 0)
+        {
+            level+=2;
+        }
+    }
     
     
 }
