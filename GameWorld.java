@@ -87,8 +87,15 @@ public class GameWorld extends World
         //When score is -1, go to GameOver screen
         if(score == -1)
         {
-            GameOver done = new GameOver();
-            Greenfoot.setWorld(done);
+            life--;
+            if(life <=0)
+            {
+                Greenfoot.setWorld(new GameOver());
+            }
+            removeObjects(hearts);
+            hearts.clear();
+            addLife();
+            score = 0;
         }
     }
     public void increaseScore()

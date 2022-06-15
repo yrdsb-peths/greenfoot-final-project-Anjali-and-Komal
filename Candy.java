@@ -14,10 +14,12 @@ public class Candy extends Actor
         int x = getX();
         int y = getY();
         setLocation(x, y+2);
-        GameWorld world = new GameWorld();
+        
+        GameWorld world = (GameWorld) getWorld();
+        World world1 = getWorld();
         if(getY() >= world.getHeight())
         {
-            world.removeObject(this);
+            world1.removeObject(this);
             world.spawnCandies();
             world.decreaseScore();
         }

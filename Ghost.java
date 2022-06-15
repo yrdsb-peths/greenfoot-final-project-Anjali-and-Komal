@@ -69,10 +69,11 @@ public class Ghost extends Actor
         setLocation(x, y+2);
 
         World world = getWorld();
+        GameWorld world1 = (GameWorld) getWorld();
         if(getY() >= world.getHeight()-10)
         {
-            //world.spawnGhosts();
             world.removeObject(this);
+            world1.spawnGhosts();
         }
     }
 
