@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=GameOver
-comment0.text=\r\n\ Screen\ that\ shows\ when\ the\ game\ is\ over\ (when\ the\ character\ has\ died)\r\n\ \r\n\ Anjali\ Vathanakumaran\ and\ Komal\ Ali\r\n\ May/\ June\ 2022\r\n
+comment0.text=\n\ Screen\ that\ shows\ when\ the\ game\ is\ over\ (when\ the\ character\ has\ died)\n\ \n\ Anjali\ Vathanakumaran\ and\ Komal\ Ali\n\ May/\ June\ 2022\n
 comment1.params=
 comment1.target=GameOver()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ GameOver.\r\n\ \r\n
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ GameOver.\n\ \n
 comment2.params=
 comment2.target=void\ act()
 numComments=3

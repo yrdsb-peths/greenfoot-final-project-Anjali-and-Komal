@@ -1,10 +1,8 @@
 #BlueJ class context
 comment0.target=PumpkinWorld
-comment0.text=\r\n\ Pumpkin\ bois\ themed\ game\ world\r\n\ \r\n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\r\n\ May\ /\ June2022\r\n
+comment0.text=\n\ Pumpkin\ bois\ themed\ game\ world\n\ \n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\n\ May\ /\ June2022\n
 comment1.params=
 comment1.target=PumpkinWorld()
-comment10.params=
-comment10.target=void\ increaseScore()
 comment2.params=
 comment2.target=void\ act()
 comment3.params=addition
@@ -16,9 +14,9 @@ comment5.target=void\ loseLives()
 comment6.params=
 comment6.target=void\ spawnCandies()
 comment7.params=
-comment7.target=void\ spawnGhosts()
+comment7.target=void\ spawnBombs()
 comment8.params=
-comment8.target=void\ spawnBombs()
+comment8.target=void\ spawnWitches()
 comment9.params=
-comment9.target=void\ spawnWitches()
-numComments=11
+comment9.target=void\ increaseScore()
+numComments=10

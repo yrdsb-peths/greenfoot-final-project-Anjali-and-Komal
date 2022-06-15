@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Candy
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Candy\ here.\r\n\ Candy\ drops\ from\ sky,\ player\ needs\ to\ eat\ them\ to\ survive\r\n\ @Komal\ Ali\ +\ Anjali\ Vathanakumaran\ \ \r\n\ @June\ 2022\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Candy\ here.\n\ Candy\ drops\ from\ sky,\ player\ needs\ to\ eat\ them\ to\ survive\n\ @Komal\ Ali\ +\ Anjali\ Vathanakumaran\ \ \n\ @June\ 2022\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=void\ act()
 comment2.params=spd

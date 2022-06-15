@@ -66,14 +66,7 @@ public class PumpkinWorld extends GameWorld
         candy.setSpeed(level);
     }
 
-    public void spawnGhosts()
-    {
-        int x = Greenfoot.getRandomNumber(600);
-        int y = 0;
-        Ghost ghost = new Ghost();
-        addObject(ghost, x, y);
-        ghost.setSpeed(level);
-    }
+    
 
     public void spawnBombs()
     {
