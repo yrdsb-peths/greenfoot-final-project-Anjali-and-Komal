@@ -9,6 +9,4 @@ comment3.params=
 comment3.target=void\ spawnBombs()
 comment4.params=
 comment4.target=void\ spawnWitches()
-comment5.params=
-comment5.target=void\ summonWitches()
-numComments=6
+numComments=5

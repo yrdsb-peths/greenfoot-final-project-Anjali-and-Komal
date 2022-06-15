@@ -13,18 +13,18 @@ public class Imposter extends Actor
     GreenfootImage[] goLeft = new GreenfootImage[6];
     
     //Direction witch faces
-    String facing = "left";
+    String facing = "right";
     private SimpleTimer animationTimer = new SimpleTimer();
     public Imposter()
     {
-        for(int i = 0; i < goRight.length; i++)
+        for(int i = 0; i < goLeft.length; i++)
         {
             goRight[i] = new GreenfootImage("images/Imposter/Imposter" + i + ".gif");
             goRight[i].mirrorHorizontally();
             goRight[i].scale(80, 80);
         }
         
-        for(int i = 0; i < goLeft.length; i++)
+        for(int i = 0; i < goRight.length; i++)
         {
             goLeft[i] = new GreenfootImage("images/Imposter/Imposter" + i + ".gif");
             goLeft[i].scale(80, 80);
@@ -32,7 +32,7 @@ public class Imposter extends Actor
         
         animationTimer.mark();
         //Inital witch image
-        setImage(goRight[0]);
+        setImage(goLeft[0]);
     }
     int imageIndex = 0;
     public void animateImposter()
@@ -43,14 +43,14 @@ public class Imposter extends Actor
         }
         animationTimer.mark();
         
-        if(facing.equals("left"))
+        if(facing.equals("right"))
         {
-            setImage(goLeft[imageIndex]);
+            setImage(goRight[imageIndex]);
             imageIndex = (imageIndex + 1) % goLeft.length;
         }
         else
         {
-            setImage(goLeft[imageIndex]);
+            setImage(goRight[imageIndex]);
             imageIndex = (imageIndex + 1) % goLeft.length;
         }
     }

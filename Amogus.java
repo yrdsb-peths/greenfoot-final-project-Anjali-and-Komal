@@ -30,6 +30,7 @@ public class Amogus extends Actor
         
         //initial amogus image
         setImage(idleRight[0]);
+        //GreenfootSound amogusEats = new GreenfootSound("ChewingCandy.wav");
     }
     int imageIndex = 0;
     
