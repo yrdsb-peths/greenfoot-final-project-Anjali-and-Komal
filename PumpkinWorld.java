@@ -17,11 +17,9 @@ public class PumpkinWorld extends GameWorld
         
         spawnCandies();
         spawnGhosts();
+        summonWitches();
         //when score is multiple of 10 spawn witches
-        if(score % 10 == 0)
-        {
-            spawnWitches();
-        }
+        
         
     }
     public void act()
@@ -46,7 +44,14 @@ public class PumpkinWorld extends GameWorld
         Witches witch = new Witches();
         int x = 600;
         int y = Greenfoot.getRandomNumber(400);
-        addObject(witch, x, y); 
+        addObject(witch, x, y);
+    }
+    public void summonWitches()
+    {
+        if(score % 10 == 0)
+        {
+            spawnWitches();
+        }
     }
     
 }

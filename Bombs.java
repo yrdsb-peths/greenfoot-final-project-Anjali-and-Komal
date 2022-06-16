@@ -22,8 +22,9 @@ public class Bombs extends Actor
         int x = getX();
         int y = getY();
         setLocation(x-2, y);
-        PumpkinWorld world = (PumpkinWorld)getWorld();
-        if(getY() >= world.getHeight())
+        World world1 = getWorld();
+        GameWorld world = (GameWorld) getWorld();
+        if(getX() >= world.getHeight() + 10)
         {
             world.removeObject(this);
         }
