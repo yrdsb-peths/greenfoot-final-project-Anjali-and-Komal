@@ -68,7 +68,7 @@ public class Pumpkins extends Actor
         {
             removeTouching(Witches.class);
             PumpkinWorld world = (PumpkinWorld) getWorld();
-            world.spawnWitches();
+            world.spawnWitch();
             world.decreaseScore();
             world.decreaseScore();
             world.decreaseScore();
