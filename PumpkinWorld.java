@@ -19,14 +19,14 @@ public class PumpkinWorld extends GameWorld
         spawnGhosts();
     }
     
-    public void act()
+    /**public void act()
     {
         if(timer.millisElapsed()> 20000)
         {
             spawnBombs();
             timer.mark();
         }
-    }
+    }**/
 
     public void spawnBombs()
     {

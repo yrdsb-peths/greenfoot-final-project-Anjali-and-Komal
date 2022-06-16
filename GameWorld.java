@@ -9,7 +9,8 @@ import java.util.ArrayList;
 public class GameWorld extends World
 {
     public int score = 0;
-    public SimpleTimer timer;
+    int timer;
+    int speed = 25;
     Label scoreLabel;
     int level = 1;
     public int life = 3;
@@ -19,14 +20,27 @@ public class GameWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        Greenfoot.setSpeed(speed);
         
-        timer = new SimpleTimer();
-        timer.mark();
+        /**timer = new SimpleTimer();
+        timer.mark();**/
+        
         hearts = new ArrayList<Heart>();
         addLife();
 
         scoreLabel = new Label(score, 75);
         addObject(scoreLabel, 550, 50);
+    }
+    
+    public void act()
+    {
+        timer++;
+        if(timer == 600)
+        {
+            timer = 0;
+            speed++;
+            Greenfoot.setSpeed(speed);
+        }
     }
     
     public int getScore()
@@ -64,20 +78,21 @@ public class GameWorld extends World
     
     public void spawnCandies()
     {
+        Candy candy = new Candy();
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
-        Candy candy = new Candy();
+       
         addObject(candy, x, y);
-        candy.setSpeed(level);
+        
     }
     
     public void spawnGhosts()
     {
+        Ghost ghost = new Ghost();
+        ghost.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
-        Ghost ghost = new Ghost();
         addObject(ghost, x, y);
-        ghost.setSpeed(level);
     }
     
     public void decreaseScore()

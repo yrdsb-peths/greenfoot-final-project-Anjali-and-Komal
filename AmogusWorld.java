@@ -26,14 +26,14 @@ public class AmogusWorld extends GameWorld
 
     }
     
-    public void act()
+    /**public void act()
     {
         if(timer.millisElapsed() > 20000)
         {
             spawnKnives();
             timer.mark();
         }
-    }
+    }**/
 
     public void spawnKnives()
     {
