@@ -18,7 +18,7 @@ public class AmogusWorld extends GameWorld
         spawnCandies();
         spawnGhosts();
         
-        //when the score is a multiple of 10, summon imposters
+        
         if(score % 10 == 0)
         {
             spawnImposters();
@@ -28,7 +28,7 @@ public class AmogusWorld extends GameWorld
     
     public void act()
     {
-        if(timer.millisElapsed()> 20000)
+        if(timer.millisElapsed() > 20000)
         {
             spawnKnives();
             timer.mark();
@@ -49,5 +49,13 @@ public class AmogusWorld extends GameWorld
         int x = 600;
         int y = Greenfoot.getRandomNumber(400);
         addObject(imposter, x, y); 
+    }
+    
+    public void summonImposters()
+    {
+        if(score % 10 == 0)
+        {
+            spawnImposters();
+        }
     }
 }
