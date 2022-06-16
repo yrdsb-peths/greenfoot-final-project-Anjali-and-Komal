@@ -20,7 +20,7 @@ public class GameWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        Greenfoot.setSpeed(speed);
+        //Greenfoot.setSpeed(speed);
         
         /**timer = new SimpleTimer();
         timer.mark();**/
@@ -39,7 +39,7 @@ public class GameWorld extends World
         {
             timer = 0;
             speed++;
-            Greenfoot.setSpeed(speed);
+            //Greenfoot.setSpeed(speed);
         }
     }
     
