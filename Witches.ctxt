@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Witches
-comment0.text=\r\n\ Spawns\ witch\ after\ score\ of\ 10\ and\ decrease\ score\ by\ 5\r\n\ \r\n\ @Komal\ Ali\ and\ Anjali\ Vathanakumaran\ (your\ name)\ \r\n\ @June\ 2022\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Spawns\ witch\ after\ score\ of\ 10\ and\ decrease\ score\ by\ 5\n\ \n\ @Komal\ Ali\ and\ Anjali\ Vathanakumaran\ (your\ name)\ \n\ @June\ 2022\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=Witches()
 comment2.params=

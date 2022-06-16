@@ -1,13 +1,12 @@
 #BlueJ class context
 comment0.target=PumpkinWorld
-comment0.text=\r\n\ Pumpkin\ bois\ themed\ game\ world\r\n\ \r\n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\r\n\ May\ /\ June2022\r\n
+comment0.text=\n\ Pumpkin\ bois\ themed\ game\ world\n\ \n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\n\ May\ /\ June2022\n
 comment1.params=
 comment1.target=PumpkinWorld()
 comment2.params=
-comment2.target=void\ spawnBombs()
-comment2.text=public\ void\ act()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ if(timer.millisElapsed()>\ 20000)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ spawnBombs();\r\n\ \ \ \ \ \ \ \ \ \ \ \ timer.mark();\r\n\ \ \ \ \ \ \ \ }\r\n}*
+comment2.target=void\ act()
 comment3.params=
-comment3.target=void\ spawnWitches()
+comment3.target=void\ spawnBombs()
 comment4.params=
-comment4.target=void\ summonWitches()
+comment4.target=void\ spawnWitches()
 numComments=5
