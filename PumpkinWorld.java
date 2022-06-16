@@ -19,6 +19,7 @@ public class PumpkinWorld extends GameWorld
 
         spawnCandies();
         spawnGhosts();
+        
         spawnWitch();
         timer.mark();
     }

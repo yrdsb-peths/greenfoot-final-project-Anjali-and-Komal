@@ -65,7 +65,7 @@ public class Witches extends Actor
         
         World world1 = getWorld();
         PumpkinWorld world = (PumpkinWorld) getWorld();
-        if(getX() >= world.getHeight() + 10)
+        if(getX() <= 10)
         {
             world1.removeObject(this);
         }
