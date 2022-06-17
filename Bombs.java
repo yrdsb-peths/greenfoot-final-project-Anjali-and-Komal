@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Bombs here.
- * Bomb appears every 20 secs and takes a way a life
+ * Bomb appears every 20 secs and takes one life
  * 
  * @Komal Ali + Anjali Vathanakumaran
  * @June 2022
