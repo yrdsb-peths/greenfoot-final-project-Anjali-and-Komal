@@ -1,11 +1,11 @@
 #BlueJ class context
 comment0.target=AmogusWorld
-comment0.text=\n\ Pumpkin\ bois\ themed\ game\ world\n\ \n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\n\ May\ /\ June2022\n
+comment0.text=\r\n\ Pumpkin\ bois\ themed\ game\ world\r\n\ \r\n\ Komal\ Ali\ and\ Anjali\ Vathanakumaran\r\n\ May\ /\ June2022\r\n
 comment1.params=
 comment1.target=AmogusWorld()
 comment2.params=
 comment2.target=void\ spawnKnives()
-comment2.text=public\ void\ act()\n\ \ \ \ {\n\ \ \ \ \ \ \ \ if(timer.millisElapsed()\ >\ 20000)\n\ \ \ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ \ \ \ spawnKnives();\n\ \ \ \ \ \ \ \ \ \ \ \ timer.mark();\n\ \ \ \ \ \ \ \ }\n}*
+comment2.text=public\ void\ act()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ if(timer.millisElapsed()\ >\ 20000)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ spawnKnives();\r\n\ \ \ \ \ \ \ \ \ \ \ \ timer.mark();\r\n\ \ \ \ \ \ \ \ }\r\n}*
 comment3.params=
 comment3.target=void\ spawnImposters()
 comment4.params=

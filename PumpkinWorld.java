@@ -11,7 +11,7 @@ import greenfoot.*;
 public class PumpkinWorld extends GameWorld
 {
     SimpleTimer timer = new SimpleTimer();
-    int spawnThreshold = 2;
+    int spawnThreshold = 5;
     public PumpkinWorld()
     {    
         Pumpkins pumpkin = new Pumpkins();
@@ -20,7 +20,6 @@ public class PumpkinWorld extends GameWorld
         spawnCandies();
         spawnGhosts();
         
-        spawnWitch();
         timer.mark();
     }
 
@@ -28,7 +27,7 @@ public class PumpkinWorld extends GameWorld
     {
         if(timer.millisElapsed()> 20000)
         {
-            spawnBombs();
+            spawnBomb();
             timer.mark();
         }
         if(score > spawnThreshold){
@@ -37,7 +36,7 @@ public class PumpkinWorld extends GameWorld
         }
     }
 
-    public void spawnBombs()
+    public void spawnBomb()
     {
         Bombs bomb = new Bombs();
         int x = 600;

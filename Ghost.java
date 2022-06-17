@@ -24,12 +24,12 @@ public class Ghost extends Actor
         {
             faceRight[i] = new GreenfootImage("images/Ghost/Ghost" + i + ".gif");
             faceRight[i].mirrorHorizontally();
-            faceRight[i].scale(65, 65);
+            faceRight[i].scale(50, 50);
         }
         for(int i = 0; i < faceLeft.length; i++)
         {
             faceLeft[i] = new GreenfootImage("images/Ghost/Ghost" + i + ".gif");
-            faceLeft[i].scale(65, 65);
+            faceLeft[i].scale(50, 50);
         }
         animationTimer.mark();
 

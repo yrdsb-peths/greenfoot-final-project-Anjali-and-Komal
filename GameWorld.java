@@ -64,6 +64,18 @@ public class GameWorld extends World
         }
     }
     
+    public void gainLife()
+    {
+        life++;
+        for (int i = 0; i < life; i++) 
+        {
+            Heart heart = new Heart();
+            hearts.add(heart);
+            addObject(heart, 50 + i * 70, 50);
+        }   
+    }
+    
+    
     public void loseLives()
     {
         life--;
