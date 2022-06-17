@@ -9,10 +9,12 @@ import java.util.ArrayList;
 public class GameWorld extends World
 {
     public int score = 0;
+    Label scoreLabel;
+
     SimpleTimer timer = new SimpleTimer();
     int speed = 25;
-    Label scoreLabel;
     int level = 1;
+    
     public int life = 3;
     public ArrayList<Heart> hearts;
     
@@ -70,6 +72,7 @@ public class GameWorld extends World
     
     public void loseLives()
     {
+        //decreases the number of lives by one and removes a heart
         life--;
         if(life <=0)
         {
@@ -82,16 +85,17 @@ public class GameWorld extends World
     
     public void spawnCandies()
     {
+        //when called, a candy falls from the top of the screen
         Candy candy = new Candy();
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
-       
         addObject(candy, x, y);
         
     }
     
     public void spawnGhosts()
     {
+        //when called a ghost falls from the top of the screen
         Ghost ghost = new Ghost();
         ghost.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
@@ -101,6 +105,7 @@ public class GameWorld extends World
     
     public void spawnGems()
     {
+        //when called, a gem falls from the top of the screen
         Gem gem = new Gem();
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
@@ -111,9 +116,10 @@ public class GameWorld extends World
     {
         score--;
         scoreLabel.setValue(score);
-        //When score is -1, go to GameOver screen
+        //When score is -1, a life is lost. when there are no remaining lives, it takes the user to the gameover screen
         if(score == -1)
         {
+            score = 0;
             life--;
             if(life <=0)
             {
@@ -122,14 +128,13 @@ public class GameWorld extends World
             removeObjects(hearts);
             hearts.clear();
             addLife();
-            score = 0;
         }
     }
     public void increaseScore()
     {
         score++;
         scoreLabel.setValue(score);
-        //level increases by one when the score is a multiple of 5
+        //level increases by two when the score is a multiple of 5
         if(score % 5 == 0)
         {
             level+=2;

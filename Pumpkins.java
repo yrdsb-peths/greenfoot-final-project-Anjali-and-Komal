@@ -20,8 +20,7 @@ public class Pumpkins extends Actor
     GreenfootSound pumpkinEats = new GreenfootSound("EatingCandy.mp3");
     public void act()
     {
-        //allowing the user to control the direction of the character using WASD
-        //WASD
+        //enables the user to use W.A.S.D to control the character in all 4 directions
         if(Greenfoot.isKeyDown("a"))
         {
             move(-3);
@@ -40,7 +39,8 @@ public class Pumpkins extends Actor
         {
             setLocation(getX(), getY() + 3);
         }
-        //Arrow keys
+        
+        //enables user to use arrow keys to control the character in all 4 directions
         if(Greenfoot.isKeyDown("left"))
         {
             move(-3);
@@ -64,8 +64,28 @@ public class Pumpkins extends Actor
     
     public void eat()
     {
+        if(isTouching(Candy.class))
+        {
+            //touching a candy increases score by 1 but failing to catch one decreases score by 1
+            removeTouching(Candy.class);
+            PumpkinWorld world = (PumpkinWorld) getWorld();
+            world.spawnCandies();
+            world.increaseScore();
+            pumpkinEats.play();
+        }
+        
+        if(isTouching(Ghost.class))
+        {
+            //touching a ghost decreases score by 1
+            removeTouching(Ghost.class);
+            PumpkinWorld world = (PumpkinWorld) getWorld();
+            world.spawnGhosts();
+            world.decreaseScore();
+        }
+        
         if(isTouching(Witches.class))
         {
+            //touching a witch decreases score by 5 and costs you a life
             removeTouching(Witches.class);
             PumpkinWorld world = (PumpkinWorld) getWorld();
             world.spawnWitch();
@@ -76,29 +96,18 @@ public class Pumpkins extends Actor
             world.decreaseScore();
             world.loseLives();
         }
-        if(isTouching(Candy.class))
-        {
-            removeTouching(Candy.class);
-            PumpkinWorld world = (PumpkinWorld) getWorld();
-            world.spawnCandies();
-            world.increaseScore();
-            pumpkinEats.play();
-        }
-        if(isTouching(Ghost.class))
-        {
-            removeTouching(Ghost.class);
-            PumpkinWorld world = (PumpkinWorld) getWorld();
-            world.spawnGhosts();
-            world.decreaseScore();
-        }
+        
         if(isTouching(Bombs.class))
         {
+            //touching a bomb costs you a life
             removeTouching(Bombs.class);
             PumpkinWorld world = (PumpkinWorld)getWorld();
             world.loseLives();
         }
+        
         if(isTouching(Gem.class))
         {
+            //touching a gem gives you an extra life
             removeTouching(Gem.class);
             PumpkinWorld world = (PumpkinWorld) getWorld();
             world.gainLife();

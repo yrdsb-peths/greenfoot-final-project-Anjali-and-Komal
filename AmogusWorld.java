@@ -28,16 +28,19 @@ public class AmogusWorld extends GameWorld
     {
         if(timer.millisElapsed() > 20000)
         {
+            //spawns knives every 20 seconds and then marks the timer again
             spawnKnives();
             timer.mark();
         }
         if(score > spawnThreshold2)
         {
+            //spawns an imposter every 5th of a score(5, 10, 15, 20...)
             spawnImposters();
             spawnThreshold2 += score; 
         }
-        if(timer.millisElapsed() > 10000)
+        if(timer.millisElapsed() > 30000)
         {
+            //spawns a gem every 30 seconds and the marks the timer again
             spawnGems();
             timer.mark();
         }
@@ -45,6 +48,7 @@ public class AmogusWorld extends GameWorld
 
     public void spawnKnives()
     {
+        //when called a knife emerges from the right of the screen
         Knife knife = new Knife();
         int x = 600;
         int y = Greenfoot.getRandomNumber(400);
@@ -53,17 +57,11 @@ public class AmogusWorld extends GameWorld
     
     public void spawnImposters()
     {
+        //when called, an imposter emerges from the right side of the screen
         Imposter imposter = new Imposter();
         int x = 600;
         int y = Greenfoot.getRandomNumber(400);
         addObject(imposter, x, y); 
     }
     
-    public void summonImposters()
-    {
-        if(score % 10 == 0)
-        {
-            spawnImposters();
-        }
-    }
 }

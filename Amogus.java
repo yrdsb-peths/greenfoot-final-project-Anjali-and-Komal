@@ -30,33 +30,30 @@ public class Amogus extends Actor
         
         //initial amogus image
         setImage(idleRight[0]);
-        //GreenfootSound amogusEats = new GreenfootSound("ChewingCandy.wav");
+        //GreenfootSound amogusEats = new GreenfootSound("sounds/ChewingCandy.wav");
     }
     int imageIndex = 0;
     
-    /**
-     * Act - do whatever the Amogus wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public void act()
     {
+        //enables the user to either use W.A.S.D or the keys to control the character in all 4 directions. 
+        if(Greenfoot.isKeyDown("w"))
+        {
+            setLocation(getX(), getY() - 3);
+        }
         if(Greenfoot.isKeyDown("a"))
         {
             move(-3);
             facing = "left";
         }
+        if(Greenfoot.isKeyDown("s"))
+        {
+            setLocation(getX(), getY() + 3);
+        }
         if(Greenfoot.isKeyDown("d"))
         {
             move(3);
             facing = "right";
-        }
-        if(Greenfoot.isKeyDown("w"))
-        {
-            setLocation(getX(), getY() - 3);
-        }
-        if(Greenfoot.isKeyDown("s"))
-        {
-            setLocation(getX(), getY() + 3);
         }
         //Arrow keys
         if(Greenfoot.isKeyDown("left"))
@@ -82,9 +79,30 @@ public class Amogus extends Actor
     
     private void eat()
     {
+        //the effects of touching/eating different characters within the game
+        if(isTouching(Candy.class))
+        {
+            //touching candies increases score by 1. If you dont catch it, you lose a point
+            removeTouching(Candy.class);
+            AmogusWorld world1 = (AmogusWorld) getWorld();
+            world1.spawnCandies();
+            world1.increaseScore();
+        }
+        
+        if(isTouching(Ghost.class))
+        {
+            //touching ghosts decrease score by 1
+            removeTouching(Ghost.class);
+            AmogusWorld world1 = (AmogusWorld) getWorld();
+            world1.spawnGhosts();
+            world1.decreaseScore();
+        }
+        
+        
         if(isTouching(Imposter.class))
         {
             removeTouching(Imposter.class);
+            //touching imposter decreases score by 5 and takes away a life
             AmogusWorld world1 = (AmogusWorld) getWorld();
             world1.spawnImposters();
             world1.decreaseScore();
@@ -94,27 +112,21 @@ public class Amogus extends Actor
             world1.decreaseScore();
             world1.loseLives();
         }
-        if(isTouching(Candy.class))
-        {
-            removeTouching(Candy.class);
-            AmogusWorld world1 = (AmogusWorld) getWorld();
-            world1.spawnCandies();
-            world1.increaseScore();
-        }
-        if(isTouching(Ghost.class))
-        {
-            removeTouching(Ghost.class);
-            AmogusWorld world1 = (AmogusWorld) getWorld();
-            world1.spawnGhosts();
-            world1.decreaseScore();
-        }
+        
         if(isTouching(Knife.class))
         {
+            //touching knives costs you 1 life
             removeTouching(Knife.class);
             AmogusWorld world1 = (AmogusWorld) getWorld();
             world1.loseLives();
         }
+        
+        if(isTouching(Gem.class))
+        {
+            //touching a gem gives you a life
+            removeTouching(Gem.class);
+            PumpkinWorld world = (PumpkinWorld) getWorld();
+            world.gainLife();
+        }
     }
-    
-    
 }
