@@ -64,7 +64,7 @@ public class Witches extends Actor
         setLocation(x-2, y);
         
         World world1 = getWorld();
-        PumpkinWorld world = (PumpkinWorld) getWorld();
+        //PumpkinWorld world = (PumpkinWorld) getWorld();
         if(getX() <= 10)
         {
             world1.removeObject(this);

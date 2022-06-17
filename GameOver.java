@@ -24,8 +24,6 @@ public class GameOver extends World
         addObject(goBack, 300, 300);
         goBack.setFillColor(Color.CYAN);
         GameWorld world = new GameWorld();
-        Label finalScore = new Label(world.getScore(), 30);
-        addObject(finalScore, 300, 200);
     }
     
     public void act()

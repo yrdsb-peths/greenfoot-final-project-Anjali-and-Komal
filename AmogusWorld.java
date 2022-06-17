@@ -10,30 +10,38 @@ import greenfoot.*;
  */
 public class AmogusWorld extends GameWorld
 {
+    SimpleTimer timer = new SimpleTimer();
+    int spawnThreshold2 = 5;
+
     public AmogusWorld()
-    {    
+    {   
         Amogus amogus = new Amogus();
         addObject(amogus, 300, 350);
         
         spawnCandies();
         spawnGhosts();
         
-        
-        if(score % 10 == 0)
-        {
-            spawnImposters();
-        }
-
+        timer.mark();
     }
     
-    /**public void act()
+    public void act()
     {
         if(timer.millisElapsed() > 20000)
         {
             spawnKnives();
             timer.mark();
         }
-    }**/
+        if(score > spawnThreshold2)
+        {
+            spawnImposters();
+            spawnThreshold2 += score; 
+        }
+        if(timer.millisElapsed() > 10000)
+        {
+            spawnGems();
+            timer.mark();
+        }
+    }
 
     public void spawnKnives()
     {

@@ -34,6 +34,11 @@ public class PumpkinWorld extends GameWorld
             spawnWitch();
             spawnThreshold+=score;
         }
+        if(timer.millisElapsed() > 10000)
+        {
+            spawnGems();
+            timer.mark();
+        }
     }
 
     public void spawnBomb()

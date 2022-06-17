@@ -25,8 +25,9 @@ public class Knife extends Actor
         int x = getX();
         int y = getY();
         setLocation(x-2, y);
-        AmogusWorld world2 = (AmogusWorld)getWorld();
-        if(getY() >= world2.getHeight())
+        
+        World world2 = getWorld();
+        if(getX() <= 10)
         {
             world2.removeObject(this);
         }

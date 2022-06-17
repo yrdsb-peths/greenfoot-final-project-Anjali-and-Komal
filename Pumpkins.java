@@ -97,14 +97,12 @@ public class Pumpkins extends Actor
             PumpkinWorld world = (PumpkinWorld)getWorld();
             world.loseLives();
         }
-        /**
-         * if(isTouching(Gem.class))
-         * {
-         *     removeTouching(Ghost.class);
-         *     PumpkinWorld world = (PumpkinWorld) getWorld();
-         *     world.spawnGems();
-         *     world.gainLife();
-         * }
-         */
+        if(isTouching(Gem.class))
+        {
+            removeTouching(Gem.class);
+            PumpkinWorld world = (PumpkinWorld) getWorld();
+            world.gainLife();
+        }
+         
     }
 }
