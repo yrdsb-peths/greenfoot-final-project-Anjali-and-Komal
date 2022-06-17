@@ -25,15 +25,19 @@ public class PumpkinWorld extends GameWorld
 
     public void act()
     {
+        //spawn bomb after 20 secs
         if(timer.millisElapsed()> 20000)
         {
             spawnBomb();
             timer.mark();
         }
-        if(score > spawnThreshold){
+        //spawn witch when score is multiple of 5
+        if(score > spawnThreshold)
+        {
             spawnWitch();
             spawnThreshold+=score;
         }
+        //spawn gems every 30 secs
         if(timer.millisElapsed() > 10000)
         {
             spawnGems();

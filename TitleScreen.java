@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Title Screen that shows the user which directs theme to which screen
+ * Title Screen that shows the user the different themes
  * 
  * Anjali Vathanakumaran and Komal Ali
  * May/ June 2022

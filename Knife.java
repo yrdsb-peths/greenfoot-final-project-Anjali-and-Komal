@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Knife here.
- * Knife appears after every 20 seconds
+ * Knife appears after every 20 seconds and takes one life
  * @Komal Ali + Anjali Vathanakumaran (your name) 
  * @June 2022 (a version number or a date)
  */

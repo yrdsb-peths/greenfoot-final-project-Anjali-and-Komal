@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
- * Spawns witch after score of 10 and decrease score by 5
+ * Spawns witch after score of 3 and decrease score by 5
  * 
  * @Komal Ali and Anjali Vathanakumaran (your name) 
  * @June 2022 (a version number or a date)

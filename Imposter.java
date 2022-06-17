@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Imposter here.
- * Imposter appears after score of 10 and decreases score by 5
+ * Imposter appears after score of 3 and decreases score by 5
  * @Komal Ali + Anjali Vathanakumaran (your name) 
  * @June 2022 (a version number or a date)
  */

@@ -3,7 +3,7 @@ import greenfoot.*;
 // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Pumpkin bois themed game world
+ * Amogus themed game world
  * 
  * Komal Ali and Anjali Vathanakumaran
  * May / June2022

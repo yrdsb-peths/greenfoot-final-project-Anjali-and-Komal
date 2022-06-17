@@ -13,8 +13,8 @@ public class Gem extends Actor
     public Gem()
     {
         GreenfootImage myImage = getImage();
-        int newHeight = (int) myImage.getHeight() / 8;
-        int newWidth = (int) myImage.getWidth() / 8;
+        int newHeight = (int) myImage.getHeight() / 2;
+        int newWidth = (int) myImage.getWidth() / 2;
         myImage.scale(newHeight, newWidth);
      }
      

@@ -2,9 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
  * Write a description of class GameWorld here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Superclass of PumpkinWorld and AmogusWorld
+ * @aKomal Ali + Anjali Vathanakumaran (your name) 
+ * June 2022 (a version number or a date)
  */
 public class GameWorld extends World
 {
@@ -140,6 +140,4 @@ public class GameWorld extends World
             level+=2;
         }
     }
-    
-    
 }
