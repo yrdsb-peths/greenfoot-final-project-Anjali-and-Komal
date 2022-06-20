@@ -110,7 +110,11 @@ public class Pumpkins extends Actor
             //touching a gem gives you an extra life
             removeTouching(Gem.class);
             PumpkinWorld world = (PumpkinWorld) getWorld();
-            world.gainLife();
+            world.increaseScore();
+            world.increaseScore();
+            world.increaseScore();
+            world.increaseScore();
+            world.increaseScore();
         }
          
     }
