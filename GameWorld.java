@@ -12,7 +12,7 @@ public class GameWorld extends World
     Label scoreLabel;
 
     SimpleTimer timer = new SimpleTimer();
-    int speed = 10;
+    int speed = 5;
     int level = 1;
     
     public int life = 3;
