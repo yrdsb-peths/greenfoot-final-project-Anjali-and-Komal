@@ -16,7 +16,7 @@ public class PumpkinInstructions extends World
         addObject(titleAmogus, 300, 35);
         titleAmogus.setFillColor(Color.BLACK);
         
-        Label amogusInstructions = new Label("Use WASD or arrow keys to move around \nYou have three lives, if you lose all of them, \ngameover! \nEating candy will increase your score by one. \nHitting a ghost will decrease your score by one. \nIf your score is a multiple of 5, the speed will \nincrease by two.\nOnce you hit 5, a witch will appear from the right. \nIf you hit one, your score decreases by 5. \nEvery 20 seconds, a bomb will appear. \nHitting one will take away one life. \nEvery 30 seconds, a gem appears. \nHitting one will give you one life", 21);
+        Label amogusInstructions = new Label("Use WASD or arrow keys to move around \nYou have three lives, if you lose all of them, \ngameover! \nEating candy will increase your score by one. \nHitting a ghost will decrease your score by one. \nIf your score is a multiple of 5, the speed will \nincrease by one.\nOnce you hit 5, a witch will appear from the right. \nIf you hit one, your score decreases by 5. \nEvery 20 seconds, a bomb will appear. \nHitting one will take away one life. \nEvery 30 seconds, a gem appears. \nHitting one will give you one life", 21);
         addObject(amogusInstructions, 300,200);
         amogusInstructions.setFillColor(Color.BLACK);
         

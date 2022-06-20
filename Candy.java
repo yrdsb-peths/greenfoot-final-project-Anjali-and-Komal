@@ -8,18 +8,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Candy extends Actor
 {
-    //private SimpleTimer timer;
-    //private int speed;
+    private SimpleTimer timer;
+    int speed = 1;
     public Candy()
     {
-        //timer = new SimpleTimer();
+        timer = new SimpleTimer();
        
     }
     
     public void act()
     {
         int x = getX();
-        int y = getY();
+        int y = getY() + speed;
         setLocation(x, y+2);
         
         World world1 = getWorld();
@@ -32,9 +32,9 @@ public class Candy extends Actor
         }
 
     }
-    /**public void setSpeed(int spd)
+    public void setSpeed(int spd)
     {
         speed = spd;
         timer.mark();
-    }**/
+    }
 }

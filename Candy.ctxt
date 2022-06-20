@@ -5,4 +5,6 @@ comment1.params=
 comment1.target=Candy()
 comment2.params=
 comment2.target=void\ act()
-numComments=3
+comment3.params=spd
+comment3.target=void\ setSpeed(int)
+numComments=4

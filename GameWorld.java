@@ -87,6 +87,7 @@ public class GameWorld extends World
     {
         //when called, a candy falls from the top of the screen
         Candy candy = new Candy();
+        candy.setSpeed(level);
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
         addObject(candy, x, y);
@@ -137,7 +138,7 @@ public class GameWorld extends World
         //level increases by two when the score is a multiple of 5
         if(score % 5 == 0)
         {
-            level+=2;
+            level+=1;
         }
     }
 }
